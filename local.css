@@ -162,3 +162,33 @@ input#searchbox {
 pre {
 	background: #D3D3D3; 
 }
+/* in sync */
+.sync {
+	background: #99ff99;
+}
+
+/* difference: outdated */
+.outdated {
+	background: #ff9999;
+}
+
+/* difference: older */
+.older {
+	background: #ffcc99;
+}
+
+/* difference: newer? */
+.newer {
+	background: #99ffff;
+}
+
+/* wrong versioning for $suite1 */
+.wrongversion {
+	background: #ffcc66;
+}
+
+/* Not Available in $suite2 */
+.NA {
+	background: #ffcccc;
+}
+
