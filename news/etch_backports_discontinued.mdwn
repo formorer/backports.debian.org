@@ -1,0 +1,22 @@
+Hi, 
+since security support for Debian Etch (4.0) is discontinued on Februrary
+15th [1] etch-backports will close its doors the same day.
+
+What does that mean?
+
+* No uploads to etch-backports are allowed after this date
+* Downloads will still be available, but every user is recommended to
+  update to Debian Lenny / lenny-backports.
+
+Just some numbers:
+
+etch backports had 528 (source) backports with ~ 1300 accepted uploads.
+I have to say "Thank you" to every contributor without your work
+backports.org wouldn't be possible.
+
+Thanks for you attention
+Alex - backports.org ftp-master
+
+[1] http://lists.debian.org/debian-security-announce/2010/msg00010.html
+
+[[!meta  date="Thu Jan 21 10:02:13 CET 2010"]]

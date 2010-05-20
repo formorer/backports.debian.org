@@ -1,0 +1,3 @@
+## News Archive
+
+[[!inline  pages="news/* and !*/Discussion" archive="yes"]]

@@ -1,0 +1,19 @@
+Hi all, 
+I'm proud to announce the start of the lenny-backports distribution. All 
+contributors are now asked to provide new backports also for lenny-backports.
+But that does not mean etch-backports is dead, we will continue support for  
+etch-backports as long as there is security support for oldstable (aka etch).
+But remember that contributors are now allowed to add packages to etch-bpo which 
+have a higher version than in lenny (because they are allowed to add versions
+from squeeze). So it is possible that there is no clean upgrade path from 
+etch + backports to lenny. If you don't want this please upgrade to lenny 
+or stop installing new package versions from etch-backports. 
+Thanks to the unoffical buildd network we are also able to provide autobuild
+packages for the following architectures: arm, armel, amd64, powerpc, i386, ia64
+and alpha. Possibly mips and sparc will follow. You can find more 
+informations about the buildstatus of a package at the [buildd webinterface](http://buildd.ayous.org).
+
+Thanks for your attention 
+Alex - ftp-master of backports.org 
+
+[[!meta  date="Fri Feb 20 22:10:44 CET 2009"]]

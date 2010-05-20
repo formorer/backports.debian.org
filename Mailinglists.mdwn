@@ -1,0 +1,6 @@
+We have the following mailinglists for backports.org:
+
+* [Backports Users](http://lists.backports.org/mailman/listinfo/backports-users) - For bugreporting and discussions about backports.org
+* [Backports Security Announce](http://lists.backports.org/mailman/listinfo/backports-security-announce) - Security Announces for backports.org)
+* [Backports Queue](http://lists.backports.org/mailman/listinfo/backports-queue) - Messages from the backports queued. 
+* [Backports Archive](http://lists.backports.org/mailman/listinfo/backports-archive) - Archive of the Repository (DAK) Mails. 

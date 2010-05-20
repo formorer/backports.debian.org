@@ -1,0 +1,65 @@
+[[!toc  startlevel=2]]
+
+##Add backports to your sources.list 
+
+1. Add this line 
+    <pre>deb http://www.backports.org/debian lenny-backports main contrib non-free</pre>
+    to your **sources.list** (or add a new file to /etc/apt/sources.list.d/)
+2. Run **apt-get update**
+
+##Install a package from backports
+
+All backports are deactivated by default (i.e. the packages are pinned to 1 by using NotAutomatic: yes in the Release files, just as in experimental). If you want to install something from backports run:
+
+    apt-get -t lenny-backports install "package"
+
+of course you can use aptitude as well:
+
+     aptitude -t lenny-backports install "package"
+
+##Use pinning for installation
+
+*Note: this method is not recommended* 
+
+Then you have to set a higher priority for each backport, yes that means every backport, also for every dependency. For mutt, you have to add these lines:
+
+    Package: mutt
+    Pin: release a=lenny-backports
+    Pin-Priority: 999
+
+to your **/etc/apt/preferences** (if you haven't use pinning before, the file has to be created).
+
+After running *apt-get update* run *apt-get install* mutt as usual. 
+
+##Install the backports.org keyring
+
+If you want apt to verify the downloaded backports you can import backports.org archive's key into apt:
+
+    apt-get install debian-backports-keyring
+
+or
+
+    gpg --keyserver hkp://subkeys.pgp.net --recv-keys 16BA136C
+    gpg --export 16BA136C | apt-key add -
+
+or
+
+    wget -O - http://backports.org/debian/archive.key | apt-key add -
+
+##Get packages upgraded from backports.org
+
+Normally packages won't get upgraded automatically from backports.org (due to the NotAutomatic flag). To get packages that you have installed from bpo automatically updated you have to have add a pinning: 
+
+    Package: *
+    Pin: release a=lenny-backports
+    Pin-Priority: 200
+
+**This setting is recommended** 
+
+##Subscribe to the securitry announce mailinglist
+
+If you want to get announcements about security updates on backports.org subscribe to the [backports-security-announce mailinglist](http://lists.backports.org/mailman/listinfo/backports-security-announce). 
+
+##Report Bugs
+
+Please report bugs that you found in the packages to the [backports-users mailinglist](http://lists.backports.org/mailman/listinfo/backports-users) and **NOT** to the Debian BTS! 

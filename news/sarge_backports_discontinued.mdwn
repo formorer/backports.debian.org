@@ -1,0 +1,21 @@
+Hi users,
+Hi contributors,
+
+as some of you may heard [1] the security support for sarge will be
+terminated on March 31st. This will also be the end of backports.org support
+for sarge-backports. Uploads to sarge-backports will not be able any more
+after this date, but it will not immediatly removed from our servers, so
+downloads will still be possible for some time, but don't expect that this
+will be forever!
+
+Now is the time to update to Etch and to start using etch-backports :). If
+you are experiencing serious upgrade problems from sarge-backports to
+etch-backports, please tell us so that we are able to fix this (if its
+serious enough :)).
+
+Thank you all very much for your support of backport.org during sarge's
+lifetime!
+
+Alex - ftp-master of backports.org
+
+[[!meta  date="Fri Jul 11 15:20:47 CEST 2008"]]

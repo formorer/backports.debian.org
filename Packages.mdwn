@@ -1,0 +1,28 @@
+**Search for packages in backports.org:**
+
+<form method="GET" action="http://packages.debian.org/search">
+Keyword: <input type="text" size="30" name="keywords" id="kw">
+<input type="submit" value="search"> <input type="reset" value="reset"><br>
+<input type="radio" name="searchon" value="names" checked="checked">Package names only <input type="radio" name="searchon" value="all">Descriptions
+<input type="radio" name="searchon" value="sourcenames">Source package names
+<br>
+Only show exact matches: <input type="checkbox" name="exact" value="1">
+<br>
+
+Section: 
+<select name="section" id="releasesection">
+  <option value="main">main</option>
+  <option value="contrib">contrib</option>
+  <option value="non-free">non-free</option>
+  <option value="all" selected="selected">all</option>
+</select>
+Distribution:
+<select name="suite">
+
+<option value="lenny-backports" selected="selected">lenny-backports</option>
+<option value="etch-backports">etch-backports</option>
+</select>
+</form>
+
+----
+Thanks to the [packages.debian.org](http://packages.debian.org) team for providing this service. 
