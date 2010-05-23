@@ -1,3 +1,11 @@
+body {
+        position:relative;
+        margin:0; padding:0 1em; height:100%;
+        font-family:serif;
+        color:black;
+        background-color:white;
+} 
+
 #content {
 	margin-left: 2ex; 
 }
@@ -136,7 +144,6 @@ input#searchbox {
 }
 
 #content h2, #content h3, #content h4, #content h5, #content h6 {
-	font-family: Georgia,"Times New Roman",Times,serif;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #dadada;
@@ -152,7 +159,6 @@ input#searchbox {
 
 #content {
 	font-variant: normal;
-	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 100%;
 	margin-bottom: 22px;
 	color: #333;
