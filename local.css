@@ -1,10 +1,4 @@
-body {
-        position:relative;
-        margin:0; padding:0 1em; height:100%;
-        font-family:serif;
-        color:black;
-        background-color:white;
-} 
+ 
 
 #content {
 	margin-left: 2ex; 
@@ -163,6 +157,14 @@ input#searchbox {
 	margin-bottom: 22px;
 	color: #333;
 
+}
+
+body {
+        position:relative;
+        margin:0; padding:0 1em; height:100%;
+        font-family:serif;
+        color:black;
+        background-color:white;
 }
 
 pre {
