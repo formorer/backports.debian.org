@@ -1,4 +1,4 @@
-**Search for packages in backports.org:**
+**Search for packages in debian-backports:**
 
 <form method="GET" action="http://packages.debian.org/search">
 Keyword: <input type="text" size="30" name="keywords" id="kw">
