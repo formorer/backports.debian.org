@@ -204,6 +204,7 @@ pre {
 
 table.volatile {
         border-collapse: collapse;
+	font-size: medium; 
 }
 .volatile th, .volatile td {
         text-align: left;
