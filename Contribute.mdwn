@@ -3,13 +3,53 @@
 ##Packaging
 
 ###Introduction 
-The packages on backports.org are made by volunteers. If you
+The packages on debian-backports are made by volunteers. If you
 like to help with backporting packages from the Debian archive, make sure you
 follow these guidelines. 
 
+##Uploading
+
+###Debian Developers
+
+All Debian Developers (DD) and Debian Maintainers (DM) can send a signed mail
+to Alexander Wirt to add their key to the keyring of debian-backports. Once
+your key is imported, you can start uploading. If you are using dupload on
+testing/sid (there is a patched version of dput on debian-backports already),
+you can add
+
+    package config;
+    $cfg{'bpo'} = {
+      fqdn => "backports.debian.org",
+      incoming => "/",
+    };
+    1
+
+to your *~/.dupload.conf* file. For dput, use the following in *~/.dput.cf*:
+
+    [bpo]
+    fqdn = backports.debian.org
+    incoming = /
+    method = ftp
+    login = anonymous
+
+You are also free to use dput from debian-backports which already supports bpo. 
+
+###Non Debian Developer 
+
+If you are not a Debian Developer, please upload your backport somewhere
+(binaries and sources, e.g. to mentors.debian.net), post a link to its .dsc
+file on <debian-backports@lists.debian.org> and ask for review and upload.
+
+Please note, that you are responsible for this backport from the time on when
+it was accepted on debian-backports. This means, you have to keep track of the
+changes in unstable, update your backport when a new version enters testing and
+provide security updates when needed. If you are not willing or capable of
+doing this, you better ask someone else (e.g. on the mentioned mailinglist) to
+create and maintain the backport. 
+
 ###Basic Rules 
 
-* [Subscribe to the backports users mailinglist](http://lists.backports.org/mailman/listinfo/backports-users). Every announcement and bugreport should come over this mailinglist, so this is a must.
+* [Subscribe to the backports mailinglist](http://lists.debian.org/debian-backports). Every announcement and bugreport should come over this mailinglist, so this is a must.
 * Use "lenny-backports" as distribution, neither "stable" nor "unstable".
 * Make sure that you have a proper build environment which only contains lenny and no unneeded backports. Maybe you want to consider pbuilder or cowbuilder for building packages.
 * Append "~bpo${debian_release}+${build_int}" to the version number, e.g. "1.2.3-4" now becomes "1.2.3-4~bpo50+1", or for native packages, "1.2.3" becomes "1.2.3~bpo50+1".
@@ -21,7 +61,7 @@ updates. If your package had a security update you can upload a new backport
 even if its not yet in testing. There are also some other exception for
 packages like the kernel, xorg or oo.org.
 * Do not do any changes to the package beside of backporting stuff.
-* Include all changelog entries since the last version on backports.org or
+* Include all changelog entries since the last version on debian-backports or
 since stable if it's the first version. You should to this by passing
 "-v<version>" to dpkg-buildpackage. Eg: "debuild -sa -v0.7.5-2", where
 "0.7.5-2" is the version in stable.
@@ -42,7 +82,7 @@ to make it run on stable.
 ##Security Uploads
 
 If you upload a package which fixes security related problems please send a
-mail to the [backports-security-announce mailinglist](http://lists.backports.org/mailman/listinfo/backports-security-announce). 
+mail to the [backports-announce mailinglist](http://lists.debian.org/mailman/debian-backports-announce). 
 
 Your mail should follow this template:
 
@@ -68,7 +108,7 @@ Your mail should follow this template:
     If you don't use pinning (see [1]) you have to update the package
     manually via "apt-get -t lenny-backports install <packagelist>" with
     the packagelist of your installed packages affected by this update.
-    [1] <http://backports.org/dokuwiki/doku.php?id=instructions>
+    [1] <http://backports.debian.org/instructions>
   
     We recommend to pin the backports repository to 200 so that new
     versions of installed  backports will be installed automatically. 
@@ -79,50 +119,12 @@ Your mail should follow this template:
 
 The Mailinglist is moderated so please be a little bit patient if your post does not appear immediately on the list. 
 
-##Uploading
-
-###Debian Developers
-
-All Debian Developers can send a signed mail to Norbert Tretkowski or Alexander
-Wirt to add their key to the keyring of backports.org. Once your key is
-imported, you can start uploading. If you are using dupload on testing/sid
-(there is a patched version of dput on backports.org already), you can add
-
-    package config;
-    $cfg{'bpo'} = {
-      fqdn => "www.backports.org",
-      incoming => "/",
-    };
-    1
-
-to your *~/.dupload.conf* file. For dput, use the following in *~/.dput.cf*:
-
-    [bpo]
-    fqdn = www.backports.org
-    incoming = /
-    method = ftp
-    login = anonymous
-
-You are also free to use dput from backports.org which already supports bpo. 
-
-###Non Debian Developer 
-
-If you are not a Debian Developer, please upload your backport somewhere
-(binaries and sources, e.g. to mentors.debian.net), post a link to its .dsc
-file on <backports-users@lists.backports.org> and ask for review and upload.
-
-Please note, that you are responsible for this backport from the time on when
-it was accepted on backports.org. This means, you have to keep track of the
-changes in unstable, update your backport when a new version enters testing and
-provide security updates when needed. If you are not willing or capable of
-doing this, you better ask someone else (e.g. on the mentioned mailinglist) to
-create and maintain the backport. 
 
 ##Best Practice
 
 ###Check NEW queue
 
-Check the NEW queue at <http://www.backports.org/debian/new.html> to avoid
+Check the NEW queue at <http://backports.debian.org/dak/new.html> to avoid
 double efforts before you start to backport something. 
 
 ###Inform the Maintainer 
@@ -130,14 +132,14 @@ double efforts before you start to backport something.
 After (and sometimes even before) the backport was accepted it may be a good
 idea to contact the maintainer of the package in Debian to tell them that you
 backported their package. If you are not already
-[subscribed](http://lists.backports.org/mailman/listinfo) to
-<backports-users@lists.backports.org>, please do so. There might be
+[subscribed](http://lists.debian.org/debian-backports) to
+<debian-backports@lists.debian.org>, please do so. There might be
 questions/problems from users regarding your backport(s) which you can answer
 best and hopefully solve.
 
 ###Inform the Backporter 
 
-If there is already a backport of your package of choice but it's outdated and you want to update it please inform the person who backported the last accepted version about your intensions. You can get the information from <http://www.backports.org/~formorer/changes/lenny-backports.html>
+If there is already a backport of your package of choice but it's outdated and you want to update it please inform the person who backported the last accepted version about your intensions. You can get the information from <http://www.debian-backports/~formorer/changes/lenny-backports.html>
 
 ###Uploaders
 
