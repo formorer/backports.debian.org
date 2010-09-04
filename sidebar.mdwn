@@ -14,5 +14,5 @@
 
 #Miscellaneous
 
-* [Lenny uploaders](changeslenny-backports.html/)
+* [Lenny uploaders](/changes/lenny-backports.html)
 * [Feedback](mailto:debian-backports@lists.debian.org)
