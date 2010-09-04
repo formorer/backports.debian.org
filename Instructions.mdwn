@@ -3,7 +3,7 @@
 ##Add backports to your sources.list 
 
 1. Add this line 
-    <pre>deb http://www.backports.org/debian lenny-backports main contrib non-free</pre>
+    <pre>deb http://backports.debian.org/debian-backports lenny-backports main contrib non-free</pre>
     to your **sources.list** (or add a new file to /etc/apt/sources.list.d/)
 2. Run **apt-get update**
 
@@ -31,24 +31,9 @@ to your **/etc/apt/preferences** (if you haven't use pinning before, the file ha
 
 After running *apt-get update* run *apt-get install* mutt as usual. 
 
-##Install the backports.org keyring
+##Get packages upgraded from backports.debian.org
 
-If you want apt to verify the downloaded backports you can import backports.org archive's key into apt:
-
-    apt-get install debian-backports-keyring
-
-or
-
-    gpg --keyserver hkp://subkeys.pgp.net --recv-keys 16BA136C
-    gpg --export 16BA136C | apt-key add -
-
-or
-
-    wget -O - http://backports.org/debian/archive.key | apt-key add -
-
-##Get packages upgraded from backports.org
-
-Normally packages won't get upgraded automatically from backports.org (due to the NotAutomatic flag). To get packages that you have installed from bpo automatically updated you have to have add a pinning: 
+Normally packages won't get upgraded automatically from backports.debian.org (due to the NotAutomatic flag). To get packages that you have installed from backports automatically updated you have to have add a pinning: 
 
     Package: *
     Pin: release a=lenny-backports
@@ -58,8 +43,8 @@ Normally packages won't get upgraded automatically from backports.org (due to th
 
 ##Subscribe to the securitry announce mailinglist
 
-If you want to get announcements about security updates on backports.org subscribe to the [backports-security-announce mailinglist](http://lists.backports.org/mailman/listinfo/backports-security-announce). 
+If you want to get announcements about security updates on backports.org subscribe to the [backports-announce mailinglist](http://lists.debian.org/debian-backports-announce). 
 
 ##Report Bugs
 
-Please report bugs that you found in the packages to the [backports-users mailinglist](http://lists.backports.org/mailman/listinfo/backports-users) and **NOT** to the Debian BTS! 
+Please report bugs that you found in the packages to the [backports mailinglist](http://lists.debian.org/debian-backports) and **NOT** to the Debian BTS! 
