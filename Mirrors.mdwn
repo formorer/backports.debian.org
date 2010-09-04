@@ -1,2 +1,1 @@
-See <http://www.backports.org/debian/README.mirrors.html> for backports mirrors.
-
+See <http://teubr.eu.org/~spaillar/debian/webwml/english/mirror/backports.en.html> for backports mirrors.
