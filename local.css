@@ -201,3 +201,21 @@ pre {
 }
 
 #backlinks { display: none; }
+
+table.volatile {
+        border-collapse: collapse;
+}
+.volatile th, .volatile td {
+        text-align: left;
+        border: 1px solid black;
+        padding: 0.2em;
+}
+.volatile thead {
+        background-color: silver;
+        color: #000000;
+}
+table.volatile tr.country {
+        color: #ffffff;
+        background-color: #df0451;
+}
+
