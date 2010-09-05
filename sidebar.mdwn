@@ -16,4 +16,5 @@
 
 * [Lenny uploaders](/changes/lenny-backports.html)
 * [NEW Queue](/dak/new.html)
+* [[diffstats|lenny-backports/overview]]
 * [Feedback](mailto:debian-backports@lists.debian.org)
