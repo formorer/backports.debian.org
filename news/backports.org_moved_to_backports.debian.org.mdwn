@@ -3,7 +3,7 @@ After several years of slacking :) by everybody involved it finally happened: ba
 
 We are happy to welcome a new ftpmaster, Gerfried Fuchs (rhonda) joined our team. 
 
-The website [1] and the mirror moved to http://backports.debian.org/ and the archive is now available below *debian-backports/*. Even though we expect the old entries to continue to work for a while, you might still want to update your sources.list entry to:
+The website [1] and the mirror moved to <http://backports.debian.org/> and the archive is now available below *debian-backports/*. Even though we expect the old entries to continue to work for a while, you might still want to update your sources.list entry to:
 
 	deb http://backports.debian.org/debian-backports lenny-backports main contrib non-free
 
@@ -33,17 +33,17 @@ the debian-backports ftpmasters (ftpmaster@backports.debian.org),
  Jörg Jaspert.  
 
 
-[1] http://backports.debian.org/  
-[2] http://backports-master.debian.org/Mirrors/  
-[2] http://backports.debian.org/Contribute/  
-[3] http://backports.debian.org/Instructions/  
-[3] http://www.debian.org/mirrors/ftpmirror  
-[4] http://www.debian.org/mirrors/submit  
-[5] http://ftp-master.debian.org/ftpsync.tar.gz  
-[6] http://ftp-master.debian.org/git/archvsync.git/  
-[7] http://lists.debian.org/debian-backports  
-[8] http://lists.debian.org/debian-backports-announce  
-[9] http://lists.debian.org/debian-backports-changes  
-[10] http://www.ece.ubc.ca  
-[11] http://www.teamix.net  
+[1] <http://backports.debian.org/>  
+[2] <http://backports-master.debian.org/Mirrors/>  
+[2] <http://backports.debian.org/Contribute/>  
+[3] <http://backports.debian.org/Instructions/>  
+[3] <http://www.debian.org/mirrors/ftpmirror>  
+[4] <http://www.debian.org/mirrors/submit>  
+[5] <http://ftp-master.debian.org/ftpsync.tar.gz>  
+[6] <http://ftp-master.debian.org/git/archvsync.git/>  
+[7] <http://lists.debian.org/debian-backports>  
+[8] <http://lists.debian.org/debian-backports-announce>  
+[9] <http://lists.debian.org/debian-backports-changes>  
+[10] <http://www.ece.ubc.ca>  
+[11] <http://www.teamix.net>  
 
