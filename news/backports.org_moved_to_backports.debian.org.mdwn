@@ -3,7 +3,7 @@ After several years of slacking :) by everybody involved it finally happened: ba
 
 We are happy to welcome a new ftpmaster, Gerfried Fuchs (rhonda) joined our team. 
 
-The website [1] and the mirror moved to http://backports.debian.org/ and the archive is now available below debian-backports/. Even though we expect the old entries to continue to work for a while, you might still want to update your sources.list entry to:
+The website [1] and the mirror moved to http://backports.debian.org/ and the archive is now available below *debian-backports/*. Even though we expect the old entries to continue to work for a while, you might still want to update your sources.list entry to:
 
 	deb http://backports.debian.org/debian-backports lenny-backports main contrib non-free
 
