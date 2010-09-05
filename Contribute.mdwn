@@ -12,7 +12,7 @@ follow these guidelines.
 ###Debian Developers
 
 All Debian Developers (DD) and Debian Maintainers (DM) can send a signed mail
-to Alexander Wirt to add their key to the keyring of debian-backports. Once
+to ftpmaster@backports.debian.org to add their key to the keyring of debian-backports. Once
 your key is imported, you can start uploading. If you are using dupload on
 testing/sid (there is a patched version of dput on debian-backports already),
 you can add
