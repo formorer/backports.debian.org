@@ -26,11 +26,12 @@ Hosting for the equipment that powers backports.debian.org is graciously provide
 
 We also would like to thank team(ix)[11] for providing a good home for this service for all these years.  As mentioned above backports.org will continue to remain functional as a mirror of the official repository from debian.org for a while.
 
-Thanks for your attention,
-the debian-backports ftpmasters (ftpmaster@backports.debian.org), 
- Alexander Wirt,
- Gerfried Fuchs,
- Jörg Jaspert.
+Thanks for your attention,  
+the debian-backports ftpmasters (ftpmaster@backports.debian.org),   
+ Alexander Wirt,  
+ Gerfried Fuchs,  
+ Jörg Jaspert.  
+
 
 [1] http://backports.debian.org/  
 [2] http://backports-master.debian.org/Mirrors/  
