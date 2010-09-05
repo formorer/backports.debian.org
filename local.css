@@ -220,3 +220,6 @@ table.volatile tr.country {
         background-color: #df0451;
 }
 
+table.diffstats {
+	font-size: small;
+}
