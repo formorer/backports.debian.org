@@ -31,6 +31,7 @@ to your *~/.dupload.conf* file. For dput, use the following in *~/.dput.cf*:
     incoming = /pub/UploadQueue/
     method = ftp
     login = anonymous
+    allow_dcut = 1
 
 You are also free to use dput from debian-backports which already supports bpo. 
 
