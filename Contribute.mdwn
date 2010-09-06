@@ -19,7 +19,7 @@ you can add
 
     package config;
     $cfg{'bpo'} = {
-      fqdn => "backports.debian.org",
+      fqdn => "backports-master.debian.org",
       incoming => "/",
     };
     1
@@ -27,7 +27,7 @@ you can add
 to your *~/.dupload.conf* file. For dput, use the following in *~/.dput.cf*:
 
     [bpo]
-    fqdn = backports.debian.org
+    fqdn = backports-master.debian.org
     incoming = /
     method = ftp
     login = anonymous
