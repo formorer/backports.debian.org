@@ -3,7 +3,7 @@
 ##Add backports to your sources.list 
 
 1. Add this line 
-    <pre>deb http://backports.debian.org/debian-backports lenny-backports main contrib non-free</pre>
+    <pre>deb http://backports.debian.org/debian-backports lenny-backports main</pre>
     to your **sources.list** (or add a new file to /etc/apt/sources.list.d/)
 2. Run **apt-get update**
 
