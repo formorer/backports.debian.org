@@ -41,7 +41,7 @@ Normally packages won't get upgraded automatically from backports.debian.org (du
 
 **This setting is recommended** 
 
-##Subscribe to the securitry announce mailinglist
+##Subscribe to the security announce mailinglist
 
 If you want to get announcements about security updates on backports.org subscribe to the [backports-announce mailinglist](http://lists.debian.org/debian-backports-announce). 
 
