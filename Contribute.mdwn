@@ -109,7 +109,7 @@ Your mail should follow this template:
     If you don't use pinning (see [1]) you have to update the package
     manually via "apt-get -t lenny-backports install <packagelist>" with
     the packagelist of your installed packages affected by this update.
-    [1] <http://backports.debian.org/instructions>
+    [1] <http://backports.debian.org/Instructions>
   
     We recommend to pin the backports repository to 200 so that new
     versions of installed  backports will be installed automatically. 
