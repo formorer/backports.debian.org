@@ -83,7 +83,7 @@ to make it run on stable.
 ##Security Uploads
 
 If you upload a package which fixes security related problems please send a
-mail to the [backports-announce mailinglist](http://lists.debian.org/mailman/debian-backports-announce). 
+mail to the [backports-announce mailinglist](http://lists.debian.org/debian-backports-announce). 
 
 Your mail should follow this template:
 
