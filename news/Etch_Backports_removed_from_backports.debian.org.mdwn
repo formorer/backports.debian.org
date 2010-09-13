@@ -1,4 +1,4 @@
-Today the Backports for Debian Etch got removed from the backports.debian.org archive. Should you really still need them, the backports are still available from http://archive.debian.org/debian-backports [1] but we recommend everybody to upgrade from Etch with backports to Lenny (with backports) now, as there is no security support anymore for Etch. 
+Today the Backports for Debian Etch got removed from the backports.debian.org archive. Should you really still need them, the backports are still available from <http://archive.debian.org/debian-backports> [1] but we recommend everybody to upgrade from Etch with backports to Lenny (with backports) now, as there is no security support anymore for Etch. 
 
 Over its lifetime etch-backports accumulated a total of 508 different backports, resulting in  more than 2250 binary packages for all Debian architectures offered to the users. All together the available backports and their source occupied 13Gb of mirrorspace and the backports team would like to thank every contributor and mirror admin for their work and help to make this possible.
 
