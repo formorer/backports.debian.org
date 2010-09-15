@@ -11,11 +11,13 @@ follow these guidelines.
 
 ###Debian Developers
 
-All Debian Developers (DD) and Debian Maintainers (DM) can send a signed mail
-to ftpmaster@backports.debian.org to add their key to the keyring of debian-backports. Once
-your key is imported, you can start uploading. If you are using dupload on
-testing/sid (there is a patched version of dput on debian-backports already),
-you can add
+All Debian Developers (DD) and Debian Maintainers (DM) can get their key added
+to the backports keyring. If you want to get include please open a ticket in
+the debian [request tracker](https://rt.debian.org/Ticket/Create.html?Queue=20)
+(See [wiki](http://wiki.debian.org/rt.debian.org) for more information about
+the request tracker). Once your key is imported, you can start uploading. If
+you are using dupload on testing/sid (there is a patched version of dput on
+debian-backports already), you can add
 
     package config;
     $cfg{'bpo'} = {
