@@ -26,7 +26,7 @@ Normally packages won't get upgraded automatically from backports.debian.org (du
     Pin-Priority: 200
 
 **This setting is recommended** 
-**Without this key you don't get security updates**
+**Without this setting you don't get security updates**
 
 ##Subscribe to the security announce mailinglist
 
