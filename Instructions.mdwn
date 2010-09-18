@@ -17,21 +17,7 @@ of course you can use aptitude as well:
 
      aptitude -t lenny-backports install "package"
 
-##Use pinning for installation
-
-*Note: this method is not recommended* 
-
-Then you have to set a higher priority for each backport, yes that means every backport, also for every dependency. For mutt, you have to add these lines:
-
-    Package: mutt
-    Pin: release a=lenny-backports
-    Pin-Priority: 999
-
-to your **/etc/apt/preferences** (if you haven't use pinning before, the file has to be created).
-
-After running *apt-get update* run *apt-get install* mutt as usual. 
-
-##Get packages upgraded from backports.debian.org
+##Get packages upgraded from backports.debian.org (Recommended!)
 
 Normally packages won't get upgraded automatically from backports.debian.org (due to the NotAutomatic flag). To get packages that you have installed from backports automatically updated you have to have add a pinning: 
 
@@ -40,6 +26,7 @@ Normally packages won't get upgraded automatically from backports.debian.org (du
     Pin-Priority: 200
 
 **This setting is recommended** 
+**Without this key you don't get security updates**
 
 ##Subscribe to the security announce mailinglist
 
