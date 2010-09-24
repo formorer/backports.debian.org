@@ -49,5 +49,6 @@ A: Something like the following solutions should work:
     dpkg -l  |awk '/^ii/ && $3 ~ /bpo[456]0/ {print $2}'
 
 or
+
     aptitude search '?narrow(?version(CURRENT),?origin(Debian Backports))' -F '%100p'
 
