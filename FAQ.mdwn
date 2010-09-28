@@ -42,3 +42,13 @@ having to wait until the fix hits testing. You can see the open issues for
 in the [security tracker](http://security-tracker.debian.org/) (though there
 may be false positives too, the version compare isn't perfect yet) 
 
+**Q: How to get a list of all installed backports?**
+
+A: Something like the following solutions should work: 
+
+    dpkg -l  |awk '/^ii/ && $3 ~ /bpo[456]0/ {print $2}'
+
+or
+
+    aptitude search '?narrow(?version(CURRENT),?origin(Debian Backports))' -F '%100p'
+

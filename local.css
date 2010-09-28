@@ -161,7 +161,7 @@ input#searchbox {
 
 body {
         position:relative;
-        margin:0; padding:0 1em; height:100%;
+        margin:0; padding:1em 1em; height:100%;
         font-family:serif;
         color:black;
         background-color:white;
