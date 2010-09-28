@@ -42,6 +42,8 @@ If you are not a Debian Developer, please upload your backport somewhere
 (binaries and sources, e.g. to mentors.debian.net), post a link to its .dsc
 file on <debian-backports@lists.debian.org> and ask for review and upload.
 
+### Some important note
+
 Please note, that you are responsible for this backport from the time on when
 it was accepted on debian-backports. This means, you have to keep track of the
 changes in unstable, update your backport when a new version enters testing and
