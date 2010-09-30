@@ -1,0 +1,31 @@
+	Christian Perrier uploaded new packages for samba which fixed the
+	following security problems:
+
+	CVE-2010-3069
+	  A vulnerability has been discovered in samba, a SMB/CIFS file,
+	  print, and login server for Unix.
+
+	  The sid_parse() function does not correctly check its input lengths
+	  when reading a binary representation of a Windows SID (Security ID).
+	  This allows a malicious client to send a sid that can overflow the
+	  stack variable that is being used to store the SID in the Samba smbd
+	  server.
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 2:3.5.5~dfsg-1~bpo50+1.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin the backports repository to 200 so that new
+	versions of installed  backports will be installed automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
+
