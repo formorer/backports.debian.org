@@ -68,7 +68,8 @@ packages like the kernel, xorg or oo.org.
 * Include all changelog entries since the last version on debian-backports or
 since stable if it's the first version. You should to this by passing
 "-v<version>" to dpkg-buildpackage. Eg: "debuild -sa -v0.7.5-2", where
-"0.7.5-2" is the version in stable.
+"0.7.5-2" is the version in stable. If the package wasn't in stable or backports before you don't have 
+include the changelog entrys (but you are free to do so).
 * Before uploading please think about how useful the package is for stable
 users and if you want to support the package until support for the distribution
 you uploaded ends.
