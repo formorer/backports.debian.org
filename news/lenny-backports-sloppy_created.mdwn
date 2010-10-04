@@ -1,0 +1,69 @@
+	 The Backports Team is pleased to announce the availability of a new
+	suite on backports: lenny-backports-sloppy.  Please read carefully
+	before considering using or uploading to it what this entails.
+
+
+	The Background
+	==============
+
+	 You might want to ask: What's that?  Let me explain it.  During the etch
+	release discussions popped up on the backports list with two clashing
+	groups:
+
+	 * One that expected to always be able to upgrade from sarge +
+	   sarge-backports to etch without backports,
+	 * others that wanted new versions of packages flowing in even after the
+	   release and were happy to upgrade from sarge + sarge-backports to etch +
+	   etch-backports.
+
+	 The standing at that time was to accept packages that were in testing
+	after the release, which wasn't etch anymore but lenny.
+
+	 The same discussion started again before the lenny release, and given that
+	we are facing the upcoming squeeze release we started internally to discuss
+	how to noise down these long and tedious discussions, because both groups
+	of people had valid opinions that shouldn't get ignored. So this is where
+	the idea for lenny-backports-sloppy comes from.
+
+	The Change
+	==========
+
+	 lenny-backports-sloppy will please the group that is happy to upgrade from
+	lenny + lenny-backports to squeeze + squeeze-backports.  lenny-backports is
+	meant only for packages from squeeze, even after the release.  Technically
+	that means it will get locked down for uploads after the release of squeeze
+	and require manual approval (for e.g. point release update versions, or
+	security updates that happen during the squeeze release cycle), while
+	lenny-backports-sloppy will accept packages from wheezy.  Uploading to
+	lenny-backport will have to get approved by the Debian Backports Team after
+	the squeeze release, just like uploads to lenny are currently approved by
+	the Release Team.
+
+	 While lenny-backports-sloppy is created already and working we ask you to
+	NOT upload packages there without prior discussion with the Backports Team.
+	This is meant to ensure that the Uploader is aware about the expectations
+	that come along with that:  The package should have a good chance to get
+	included in the next Debian release aka wheezy, and that the Uploader is
+	willing to look after the package in the upcoming squeeze-backports suite
+	after the release of squeeze to ensure upgradeability.
+
+	 In case of questions, feel free to ask either directly on the
+	debian-backports@lists.debian.org mailinglist, or contact
+	team@backports.debian.org privately.
+
+	 We are also pleased to annonce that the first upload to
+	lenny-backports-sloppy already happened. From now on you will be able
+	to install Postgresql 9.0 (which is not targeted at squeeze) from
+	lenny-backports-sloppy.
+
+
+	How to use
+	==========
+
+	 If you want to use lenny-backports-sloppy you will have to add both
+	lenny-backports and lenny-backports-sloppy to your sources.list. Backports
+	from lenny-backports-sloppy may depend on packages in lenny-backports.
+
+	  deb http://backports.debian.org/debian-backports lenny-backports   main
+	  deb http://backports.debian.org/debian-backports lenny-backports-sloppy main
+
