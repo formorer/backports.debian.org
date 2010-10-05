@@ -146,7 +146,7 @@ best and hopefully solve.
 
 ###Inform the Backporter 
 
-If there is already a backport of your package of choice but it's outdated and you want to update it please inform the person who backported the last accepted version about your intensions. You can get the information from <http://www.debian-backports/~formorer/changes/lenny-backports.html>
+If there is already a backport of your package of choice but it's outdated and you want to update it please inform the person who backported the last accepted version about your intensions. You can get the information from <http://backports.debian.org/changes/lenny-backports.html>
 
 ###Uploaders
 
