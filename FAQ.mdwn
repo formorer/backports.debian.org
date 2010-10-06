@@ -31,7 +31,7 @@ you use one of these exceptions, set the pin-priority (see man apt_preferences)
 temporarily to 1001 for all packages from lenny, and you should be able to do a
 safe dist-upgrade too. 
 
-**Q: Is there security support for packages from backports.org?**
+**Q: Is there security support for packages from backports.debian.org?*
 
 A: Unfortunately not. This is done on a best effort basis by the people who
 track the package, usually the ones who originally did upload the package into

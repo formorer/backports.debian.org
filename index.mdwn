@@ -9,7 +9,7 @@ Backports are recompiled packages from testing (mostly) and unstable (in a few c
 
 * Users should start at the [[Instructions]] page.
 * Contributors should start [[Contribute]] page.
-* If you want to know which packages are available via backports.org look at the [[Packages]] page. 
+* If you want to know which packages are available via backports.debian.org look at the [[Packages]] page. 
 
 ##[[News]]
 
