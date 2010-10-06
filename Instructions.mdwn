@@ -19,7 +19,7 @@ of course you can use aptitude as well:
 
 ##Get packages upgraded from backports.debian.org (Recommended!)
 
-Normally packages won't get upgraded automatically from backports.debian.org (due to the NotAutomatic flag). To get packages that you have installed from backports automatically updated you have to have add a pinning, either to /etc/apt/preferences or to a file in /etc/apt/preferences.d/: 
+Normally packages won't get upgraded automatically from backports.debian.org (due to the NotAutomatic flag). To get packages that you have installed from backports automatically updated you have to have add a pinning, either to /etc/apt/preferences: 
 
     Package: *
     Pin: release a=lenny-backports
