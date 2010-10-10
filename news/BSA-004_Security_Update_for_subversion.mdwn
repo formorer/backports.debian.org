@@ -1,0 +1,32 @@
+	Peter Samuelson uploaded new packages for subversion which fixed the
+	following security problems:
+
+	CVE-2010-3315
+	  When "SVNPathAuthz short_circuit" is enabled, authz authentication in
+	  the mod_dav_svn module for the Apache HTTP Server is flawed. Remote
+	  authenticated users can bypass intended access restrictions via svn
+	  commands.
+
+	  http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3315
+
+	For the lenny-backports distribution, the problem has been fixed in
+	version 1.6.12dfsg-2~bpo50+1.
+
+	For the current testing (squeeze) and unstable (sid) distributions, the
+	problem has been fixed in version 1.6.12dfsg-2.
+
+	Upgrade instructions
+	- --------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin the backports repository to 200 so that new
+	versions of installed  backports will be installed automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
+
