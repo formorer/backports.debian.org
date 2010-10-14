@@ -1,0 +1,63 @@
+	Marco Nenciarini uploaded new packages for dovecot which fixed the
+	following security problems:
+
+	CVE-2010-3706
+	  plugins/acl/acl-backend-vfile.c in Dovecot 1.2.x before 1.2.15 and
+	  2.0.x before 2.0.5 interprets an ACL entry as a directive to add to
+	  the permissions granted by another ACL entry, instead of a directive
+	  to replace the permissions granted by another ACL entry, in certain
+	  circumstances involving the private namespace of a user, which allows
+	  remote authenticated users to bypass intended access restrictions via
+	  a request to read or modify a mailbox.
+
+	  http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3706
+
+	CVE-2010-3707
+	  plugins/acl/acl-backend-vfile.c in Dovecot 1.2.x before 1.2.15 and
+	  2.0.x before 2.0.5 interprets an ACL entry as a directive to add to
+	  the permissions granted by another ACL entry, instead of a directive
+	  to replace the permissions granted by another ACL entry, in certain
+	  circumstances involving more specific entries that occur after less
+	  specific entries, which allows remote authenticated users to bypass
+	  intended access restrictions via a request to read or modify a
+	  mailbox.
+
+	  http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3707
+
+	CVE-2010-3779
+	  Dovecot 1.2.x before 1.2.15 and 2.0.x before 2.0.beta2 grants the
+	  admin permission to the owner of each mailbox in a non-public
+	  namespace, which might allow remote authenticated users to bypass
+	  intended access restrictions by changing the ACL of a mailbox, as
+	  demonstrated by a symlinked shared mailbox.
+
+	  http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3779
+
+	CVE-2010-3780
+	  Dovecot 1.2.x before 1.2.15 allows remote authenticated users to
+	  cause a denial of service (master process outage) by simultaneously
+	  disconnecting many (1) IMAP or (2) POP3 sessions.
+
+	  http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3780
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 1.2.15-1~bpo50+1.
+
+	For the current testing (squeeze) and unstable (sid) distributions, the
+	problem has been fixed in version 1.2.15-1.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin the backports repository to 200 so that new
+	versions of installed  backports will be installed automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
+
