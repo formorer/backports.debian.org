@@ -118,8 +118,8 @@ Your mail should follow this template:
     the packagelist of your installed packages affected by this update.
     [1] <http://backports.debian.org/Instructions>
   
-    We recommend to pin (in /etc/apt/apt.conf) the backports repository to 200
-    so that new versions of installed  backports will be installed
+    We recommend to pin (in /etc/apt/preferences) the backports repository to
+    200 so that new versions of installed  backports will be installed
     automatically. 
   
       Package: *
