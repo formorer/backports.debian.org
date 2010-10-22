@@ -1,0 +1,28 @@
+	Jan Wagner uploaded new packages for pidgin which fixed the
+	following security problems:
+
+	CVE-2010-3711
+	  Fixes multiple remotely-triggered DoSes
+
+	  http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3711
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 2.7.3-1~bpo50+2.
+
+	For the unstable (sid) distribution, the problem has been fixed in version 
+	2.7.4-1, for testing (squeeze) the fix should hopefully follow soon.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin the backports repository to 200 so that new
+	versions of installed  backports will be installed automatically. 
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
