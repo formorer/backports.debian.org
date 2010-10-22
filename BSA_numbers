@@ -4,3 +4,4 @@
 004 subversion
 005 postgresql-8.4
 006 dovecot
+007 mailscanner
