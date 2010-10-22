@@ -1,0 +1,44 @@
+	Jan Wagner uploaded new packages for mailscanner which fixed the
+	following security problems:
+
+	CVE-2010-3095
+	  incomplete fix for CVE-2008-5313
+
+	  http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3095
+
+	The original text of CVE-2008-5313:
+
+	  mailscanner 4.68.8 and other versions before 4.74.16-1 might allow local
+	  users to overwrite arbitrary files via a symlink attack on certain temporary
+	  files used by the (1) f-prot-autoupdate, (2) clamav-autoupdate, (3) 
+	  avast-autoupdate, and (4) f-prot-6-autoupdate scripts in 
+	  /etc/MailScanner/autoupdate/; the (5) bitdefender-wrapper, (6) 
+	  kaspersky-wrapper, (7) clamav-wrapper, and (8) rav-wrapper scripts in 
+	  /etc/MailScanner/wrapper/; the (9) Quarantine.pm, (10) TNEF.pm, (11)
+	  MessageBatch.pm, (12) WorkArea.pm, and (13) SA.pm scripts in 
+	  /usr/share/MailScanner/MailScanner/; (14) /usr/sbin/MailScanner; and (15) 
+	  scripts that load the /etc/MailScanner/mailscanner.conf.with.mcp 
+	  configuration file.
+
+	  http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5313
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 4.79.11-2.1~bpo50+1.
+
+	For the unstable (sid) distribution, the problem has been fixed in version 
+	4.79.11-2.1, for testing (squeeze) should follow the fix soon.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin the backports repository to 200 so that new
+	versions of installed  backports will be installed automatically. 
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
