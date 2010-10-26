@@ -67,7 +67,7 @@ even if its not yet in testing. There are also some other exception for
 packages like the kernel, xorg or oo.org.
 * Do not do any changes to the package beside of backporting stuff.
 * Include all changelog entries since the last version on debian-backports or
-since stable if it's the first version. You should to this by passing
+since stable if it's the first version. You should do this by passing
 "-v<version>" to dpkg-buildpackage. Eg: "debuild -sa -v0.7.5-2", where
 "0.7.5-2" is the version in stable. If the package wasn't in stable or backports before you don't have 
 include the changelog entrys (but you are free to do so).
