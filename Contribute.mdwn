@@ -138,13 +138,16 @@ double efforts before you start to backport something.
 
 ###Inform the Maintainer 
 
-After (and sometimes even before) the backport was accepted it may be a good
-idea to contact the maintainer of the package in Debian to tell them that you
-backported their package. If you are not already
+It is a good idea to contact the maintainer of the package in Debian prior to
+your upload to let them know or even share ideas and common pitfalls (like
+special dependencies). If you are not already
 [subscribed](http://lists.debian.org/debian-backports) to
 <debian-backports@lists.debian.org>, please do so. There might be
 questions/problems from users regarding your backport(s) which you can answer
-best and hopefully solve.
+best and hopefully solve. Also it is adviced to subscribe to the bugreports for
+the package through the [PTS](http://packages.qa.debian.org/) to be notified
+about issues that potential affect the backport too and would be a good reason
+to update the backports.
 
 ###Inform the Backporter 
 
