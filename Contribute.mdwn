@@ -157,4 +157,6 @@ If there is already a backport of your package of choice but it's outdated and y
 
 If you put yourself into the Uploaders: field in debian/control you can easily
 track your backports on the package overview at
-<http://qa.debian.org/developer.php>. 
+<http://qa.debian.org/developer.php>. Alternatively you can use the
+[subscribe feature](http://qa.debian.org/developer.php#subscribe) of the DDPO
+to have them listed.
