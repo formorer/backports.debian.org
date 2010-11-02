@@ -5,5 +5,6 @@
 005 postgresql-8.4
 006 dovecot
 007 mailscanner
-008 nss
-009 icewease
+008 pidgin
+009 nss
+010 icewease
