@@ -1,0 +1,61 @@
+	Alexander Reichle-Schmehl uploaded new packages for iceweasel which
+	fixed the following security problems:
+
+	CVE-2010-3174
+	CVE-2010-3176
+	        Multiple unspecified vulnerabilities in the browser engine in
+	        Iceweasel allow remote attackers to cause a denial of service
+	        (memory corruption and application crash) or possibly execute
+	        arbitrary code via unknown vectors.
+
+	CVE-2010-3177
+	        Multiple cross-site scripting (XSS) vulnerabilities in the
+	        Gopher parser in Iceweasel allow remote attackers to inject
+	        arbitrary web script or HTML via a crafted name of a (1) file
+	        or (2) directory on a Gopher server.
+
+	CVE-2010-3178
+	        Iceweasel does not properly handle certain modal calls made by
+	        javascript: URLs in circumstances related to opening a new
+	        window and performing cross-domain navigation, which allows
+	        remote attackers to bypass the Same Origin Policy via a
+	        crafted HTML document.
+
+	CVE-2010-3179
+	        Stack-based buffer overflow in the text-rendering
+	        functionality in Iceweasel allows remote attackers to execute
+	        arbitrary code or cause a denial of service (memory corruption
+	        and application crash) via a long argument to the
+	        document.write method.
+
+	CVE-2010-3180
+	        Use-after-free vulnerability in the nsBarProp function in
+	        Iceweasel allows remote attackers to execute arbitrary code by
+	        accessing the locationbar property of a closed window.
+
+	CVE-2010-3183
+	        The LookupGetterOrSetter function in Iceweasel does not
+	        properly support window.__lookupGetter__ function calls that
+	        lack arguments, which allows remote attackers to execute
+	        arbitrary code or cause a denial of service (incorrect pointer
+	        dereference and application crash) via a crafted HTML
+	        document.
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 3.5.15-1~bpo50+1.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository
+	to 200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
