@@ -1,0 +1,32 @@
+	Patrick Matthäi <pmatthaei> uploaded new packages for znc which fixed
+	the following security problems:
+
+	CVE-2010-2934
+	    Multiple unspecified vulnerabilities in ZNC 0.092 allow remote
+	    attackers to cause a denial of service (exception and daemon crash)
+	    via unknown vectors related to "unsafe substr() calls."
+
+	CVE-2010-2812
+	    Client.cpp in ZNC 0.092 allows remote attackers to cause a denial
+	    of service (exception and daemon crash) via a PING command that
+	    lacks an argument.
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 0.092-3~bpo50+1.
+
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository
+	to 200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
