@@ -1,0 +1,27 @@
+	Matt Taggart uploaded new packages for wordpress which fixed the
+	following security problems:
+
+	CVE-2010-4257
+	  SQL injection vulnerability in the do_trackbacks function in
+	  wp-includes/comment.php in WordPress before 3.0.2 allows remote
+	  authenticated users to execute arbitrary SQL commands via the Send
+	  Trackbacks field.
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 3.0.2-1~bpo50+1.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository to
+	200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
