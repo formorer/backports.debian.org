@@ -1,0 +1,34 @@
+	Willem Pinckaers discovered that Tor, a tool to enable online anonymity,
+	does not correctly handle all data read from the network.  By supplying
+	specially crafted packets a remote attacker can cause Tor to overflow
+	its heap, crashing the process in turn.  Arbitrary code execution has
+	not been confirmed but also cannot be ruled out completely.
+
+	The Common Vulnerabilities and Exposures project has assigned
+	CVE-2010-1676 to this issue.
+
+	For the lenny-backports archive this problem has been fixed in
+	version 0.2.1.26-6~bpo50+1.
+
+	For the stable distribution (lenny) this problem has been fixed in
+	version 0.2.1.26-1~lenny+3 (DSA-2136-1).
+
+	For the testing distribution (squeeze) and unstable distribution (sid)
+	this problem has been fixed in version 0.2.1.26-6.
+
+	Upgrade instructions
+	- --------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository to
+	200 so that new versions of installed backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
+
