@@ -94,7 +94,7 @@ In advance ask <team@backports.debian.org> for a new BSA number.
 
 Your mail should follow this template:
 
-    Subject: BSA-XXX Security Update for <packagename>
+    Subject: [BSA-XXX] Security Update for <packagename>
       
     <Uploader> uploaded new packages for <packagename> which fixed the
     following security problems:
