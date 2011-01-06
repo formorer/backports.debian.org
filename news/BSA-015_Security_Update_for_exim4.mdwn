@@ -1,0 +1,36 @@
+	Andreas Metzler uploaded new packages for exim4 which fixed the
+	following security problems:
+
+	CVE-2010-4345 exim privilege escalation
+	  Exim 4.72 and earlier allows local users to gain privileges by
+	  leveraging the ability of the exim user account to specify an
+	  alternate configuration file with a directive that contains
+	  arbitrary commands, as demonstrated by the spool_directory
+	  directive.
+
+	For the lenny-backports distribution the problem has been fixed in
+	version 4.72-3~bpo50+1.
+
+	For the stable distribution (lenny), this problem will be fixed in
+	version 4.69-9+lenny2.
+
+	For the upcoming stable version (squeeze) and the unstable distribution
+	(sid), this problems has been fixed in version 4.72-3.
+
+	For the experimental distribution, these problems have been fixed in
+	version 4.73~rc1-1.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository to
+	200 so that new versions of installed backports will be installed
+	automatically.
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
