@@ -1,0 +1,38 @@
+	Sven Hoexter uploaded new packages for subversion which fixed the
+	following security problems:
+
+	CVE-2010-4539
+	  A NULL pointer dereference flaw exisits in mod_dav_svn, the Apache
+	  httpd module for the Subversion server, when listing of repositories
+	  (SVNListParentPath directive) is enabled. A remote user could use
+	  this flaw to cause denial of service (particular httpd thread crash).
+	  http://security-tracker.debian.org/tracker/CVE-2010-4539
+
+	CVE-2010-4644
+	  A server-side memory leak allows remote users to cause a denial
+	  of service (memory consumption and daemon outage or crash) via
+	  Subversion client "blame" or "log" operations, when the "-g" option
+	  (request to display additional merge history) is used.
+	  http://security-tracker.debian.org/tracker/CVE-2010-4644
+
+	For the lenny-backports distribution, the problems have been fixed in
+	version 1.6.12dfsg-4~bpo50+1.
+
+	For the upcoming stable version (squeeze) and the unstable distribution
+	(sid), these problems have been fixed in version 1.6.12dfsg-4.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository
+	to 200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
