@@ -1,0 +1,88 @@
+	Gerfried Fuchs uploaded new packages for drupal6 which fixed the
+	following security problems:
+
+	CVE-2010-2250
+	  A user-supplied value is directly output during installation allowing
+	  a malicious user to craft a URL and perform a cross-site scripting
+	  attack.  The exploit can only be conducted on sites not yet installed.
+
+	CVE-2010-2471
+	  The API function drupal_goto() is susceptible to a phishing attack. An
+	  attacker could formulate a redirect in a way that gets the Drupal site
+	  to send the user to an arbitrarily provided URL. No user submitted
+	  data will be sent to that URL.
+
+	CVE-2010-2472
+	  Locale module and dependent contributed modules do not sanitize the
+	  display of language codes, native and English language names properly.
+	  While these usually come from a preselected list, arbitrary
+	  administrator input is allowed. This vulnerability is mitigated by the
+	  fact that the attacker must have a role with the 'administer
+	  languages' permission.
+
+	CVE-2010-2473
+	  Under certain circumstances, a user with an open session that is
+	  blocked can maintain his/her session on the Drupal site, despite being
+	  blocked.
+
+	CVE-2010-3091
+	  The OpenID module in Drupal 6.x before 6.18, and the OpenID module 5.x
+	  before 5.x-1.4 for Drupal, violates the OpenID 2.0 protocol by not
+	  verifying the openid.return_to value, which allows remote attackers to
+	  bypass authentication by leveraging an assertion from an OpenID
+	  provider.
+
+	CVE-2010-3092
+	  The upload module in Drupal 5.x before 5.23 and 6.x before 6.18 does
+	  not properly support case-insensitive filename handling in a database
+	  configuration, which allows remote authenticated users to bypass the
+	  intended restrictions on downloading a file by uploading a different
+	  file with a similar name.
+
+	CVE-2010-3093
+	  The comment module in Drupal 5.x before 5.23 and 6.x before 6.18
+	  allows remote authenticated users with certain privileges to bypass
+	  intended access restrictions and reinstate removed comments via a
+	  crafted URL, related to an "unpublishing bypass" issue.
+
+	CVE-2010-3094
+	  Multiple cross-site scripting (XSS) vulnerabilities in Drupal 6.x
+	  before 6.18 allow remote authenticated users with certain privileges
+	  to inject arbitrary web script or HTML via (1) an action description,
+	  (2) an action message, (3) a node, or (4) a taxonomy term, related to
+	  the actions feature and the trigger module.
+
+	CVE-2010-3685
+	  The OpenID module in Drupal 6.x before 6.18, and the OpenID module 5.x
+	  before 5.x-1.4 for Drupal, violates the OpenID 2.0 protocol by not
+	  checking for reuse of openid.response_nonce values, which allows
+	  remote attackers to bypass authentication by leveraging an assertion
+	  from an OpenID provider.
+
+	CVE-2010-3686
+	  The OpenID module in Drupal 6.x before 6.18, and the OpenID module 5.x
+	  before 5.x-1.4 for Drupal, violates the OpenID 2.0 protocol by not
+	  ensuring that fields are signed, which allows remote attackers to
+	  bypass authentication by leveraging an assertion from an OpenID
+	  provider.
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 6.18-1~bpo50+1.
+
+	For the unstable (sid) and testing (squeeze) distributions, the problems
+	have been fixed in version 6.18-1.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin the backports repository to 200 so that new
+	versions of installed  backports will be installed automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
