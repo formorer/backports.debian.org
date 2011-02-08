@@ -18,18 +18,11 @@ Page](http://buildd.debian.org/status/) of the used buildd network, just enter
 your $package and don't forget to select the lenny-backports suite from the
 dropdown list. 
 
-**Q: What about dist-upgrade from lenny-backports to squeeze?**
+**Q: What about dist-upgrade from squeeze-backports to wheezy?**
 
 A: In general, backports.debian.org only has backports made from testing but with
 reduced version numbers (apt considers ~ lower than -), therefore the upgrade
-path from lenny-backports to squeeze is save. However, there are a few backports
-only which are made from unstable (security updates and the following
-exceptions: firefox, kernel, openoffice.org, xorg).
-
-If you do not use one of these exceptions, you can safely upgrade to squeeze. If
-you use one of these exceptions, set the pin-priority (see man apt_preferences)
-temporarily to 1001 for all packages from lenny, and you should be able to do a
-safe dist-upgrade too. 
+path from squeeze-backports to wheezy is save.
 
 **Q: Is there security support for packages from backports.debian.org?*
 
@@ -38,7 +31,7 @@ track the package, usually the ones who originally did upload the package into
 backports. When security related bugs are fixed in Debian unstable the
 backporter is permitted to upload the package from directly there instead of
 having to wait until the fix hits testing. You can see the open issues for
-[lenny-backports](http://security-tracker.debian.org/tracker/status/release/stable-backports)
+[squeeze-backports](http://security-tracker.debian.org/tracker/status/release/stable-backports)
 in the [security tracker](http://security-tracker.debian.org/) (though there
 may be false positives too, the version compare isn't perfect yet) 
 
