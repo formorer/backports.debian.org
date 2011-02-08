@@ -1,0 +1,44 @@
+	The backports team is proud to announce the next generation of backports:
+	squeeze-backports.  From now on all contributors will be able to upload
+	backports of packages available in wheezy (testing) to squeeze-backports.
+	Additionally the previously announced lenny-backports-sloppy is now officially
+	open for uploads.
+
+	To ensure the basic principle that a system consisting of lenny plus
+	lenny-backports can be upgraded to squeeze proper, the handling of the
+	lenny-backports branch has changed.  From now on uploads to lenny-backports
+	need manual approval from a backports team member similar to the handling of
+	the proposed-updates queue within the regular archive. Feel free to upload
+	packages here, especially security updates to previously backported versions,
+	but please ensure the versions are lower than those in stable /
+	stable-security.
+
+	If you feel the need of newer versions for lenny than which are available in
+	squeeze, please do upload them to lenny-backports-sloppy.  The rules for this
+	suite are practically the same as for squeeze-backports:  Do base your uploads
+	on packages available in testing (wheezy) and build them in the appropriate
+	environment.
+
+	Please remember when using lenny-backports-sloppy you can't easily upgrade to a
+	plain squeeze.  This suite is specificly meant to contain newer versions than
+	squeeze.  While the aim is to only carry packages that will also be provided in
+	squeeze-backports for upgrade possibilities, we can't guarantee that, so be
+	careful.
+
+	User visible change to squeeze-backports
+	---------------------------------------- 
+	As the apt maintainers had been so kind to introduce a new archive wide option
+	in squeeze, the usage of backports.debian.org is easier than ever before:  In
+	the past you had to explicitly configure pinning for the backports repository
+	to enjoy the full feature set including upgrades to new versions of packages
+	you had installed from there.  As this is cumbersome, errorprone and a nuisance
+	this new setting got introduced.  With this feature backports get handled in a
+	way that updates for packages installed from squeeze-backports will happen out
+	of the box.
+
+	And last but definitely not least, let us send a big "thank you" to all
+	contributors that backports.debian.org enjoys to have - you made it possible to
+	serve more than 1400 binary packages through 837 source backports since
+	lenny-backports got kicked into life.  Keep up the good work.
+
+	Thank you very much!
