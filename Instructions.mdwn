@@ -3,21 +3,21 @@
 ##Add backports to your sources.list 
 
 1. Add this line 
-    <pre>deb http://backports.debian.org/debian-backports lenny-backports main</pre>
+    <pre>deb http://backports.debian.org/debian-backports squeeze-backports main</pre>
     to your **sources.list** (or add a new file to /etc/apt/sources.list.d/)
 2. Run **apt-get update**
 
 ##Install a package from backports
 
-All backports are deactivated by default (i.e. the packages are pinned to 1 by using NotAutomatic: yes in the Release files, just as in experimental). If you want to install something from backports run:
+All backports are deactivated by default (i.e. the packages are pinned to 100 by using ButAutomaticUpgrades: yes in the Release files. If you want to install something from backports run:
 
-    apt-get -t lenny-backports install "package"
+    apt-get -t squeeze-backports install "package"
 
 of course you can use aptitude as well:
 
-     aptitude -t lenny-backports install "package"
+     aptitude -t squeeze-backports install "package"
 
-##Get packages upgraded from backports.debian.org (Recommended!)
+##Get packages upgraded from backports.debian.org (Recommended!, only for lenny-backports(-sloppy)) 
 
 Normally packages won't get upgraded automatically from backports.debian.org (due to the NotAutomatic flag). To get packages that you have installed from backports automatically updated you have to have add a pinning, either to /etc/apt/preferences: 
 
@@ -27,6 +27,15 @@ Normally packages won't get upgraded automatically from backports.debian.org (du
 
 **This setting is recommended** 
 **Without this setting you don't get security updates**
+**This is not necessary for squeeze-backports**
+
+##lenny-backports-sloppy
+
+To guarantee a clean upload path from lenny-backports to squeeze it not allowed to upload backports from wheezy to lenny-backports. 
+To allow new backports also in old-stable we created a new suite for everybody that prefer newer packages above a clean upgrade path:
+**lenny-backports-sloppy**. You can use it exactly as lenny-backports, just add another line to your **sources.list** and install 
+new packages via
+	apt-get -t lenny-backports-sloppy install <packages>
 
 ##Subscribe to the security announce mailinglist
 
