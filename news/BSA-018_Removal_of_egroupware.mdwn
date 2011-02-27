@@ -1,3 +1,4 @@
+[[!meta date="2011-01-15 15:39:38 UTC"]]
 	 Following the removal of the egroupware packages from testing and
 	unstable because they were unmaintained and have outstanding unaddressed
 	security issues for a while the packages got now removed from

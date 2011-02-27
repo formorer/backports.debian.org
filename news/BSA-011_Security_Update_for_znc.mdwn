@@ -1,3 +1,4 @@
+[[!meta date="2010-11-23 17:28:11 UTC"]]
 	Patrick Matthäi <pmatthaei> uploaded new packages for znc which fixed
 	the following security problems:
 

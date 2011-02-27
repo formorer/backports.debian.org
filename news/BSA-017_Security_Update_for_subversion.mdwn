@@ -1,3 +1,4 @@
+[[!meta date="2011-01-10 15:12:05 UTC"]]
 	Sven Hoexter uploaded new packages for subversion which fixed the
 	following security problems:
 
