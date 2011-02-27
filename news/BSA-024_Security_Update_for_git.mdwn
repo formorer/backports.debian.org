@@ -1,5 +1,4 @@
 [[!meta  date="2011-02-14 09:09:06 UTC"]]
-
 	Sebastian Harl uploaded new packages for git which fixed the following
 	security problem:
 
