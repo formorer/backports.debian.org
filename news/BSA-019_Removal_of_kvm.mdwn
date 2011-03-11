@@ -1,0 +1,11 @@
+[[!meta date="2011-01-15 16:26:46 UTC"]]
+	 Following the removal of kvm source package from testing and unstable
+	because of being obsoleted by qemu-kvm and having a fair amount of
+	outstanding security issues since a while the package now got removed
+	from lenny-backports, too.
+
+	 If you have installed the kvm and related packages from lenny-backports
+	please make sure that you upgrade to the qemu-kvm related ones.
+
+	 Enjoy,
+	Rhonda

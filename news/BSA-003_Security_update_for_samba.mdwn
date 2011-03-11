@@ -1,3 +1,4 @@
+[[!meta date="2010-09-30 05:47:13 UTC"]]
 	Christian Perrier uploaded new packages for samba which fixed the
 	following security problems:
 

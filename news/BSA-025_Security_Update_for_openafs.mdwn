@@ -1,0 +1,49 @@
+[[!meta date="2011-02-22 19:59:57 UTC"]]
+	Russ Allbery uploaded new packages for openafs which fixed the following
+	security problems:
+
+	CVE-2011-0430 (DSA-2168-1)
+
+	  Andrew Deason discovered that a double free in the Rx server process
+	  could lead to denial of service or the execution of arbitrary code.
+	  This affects the server components of the openafs package.
+
+	CVE-2011-0431 (DSA-2168-1)
+
+	  It was discovered that insufficient error handling in the kernel module
+	  could lead to denial of service.  A local user can induce a kernel panic
+	  in the OpenAFS client.  This affects the kernel module component of the
+	  openafs package.
+
+	Note that for the fix to CVE-2011-0431, you must rebuild the OpenAFS
+	kernel module and unload and reload the newly built kernel module after
+	upgrading openafs-modules-source or openafs-modules-dkms, whichever you
+	use.
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 1.4.12.1+dfsg-4~bpo50+1.
+
+	For the oldstable distribution (lenny), this problem has been fixed in
+	version 1.4.7.dfsg1-6+lenny4.
+
+	For the stable distribution (squeeze), this problem has been fixed in
+	version 1.4.12.1+dfsg-4.
+
+	For the unstable distribution (sid), this problem has been fixed in
+	version 1.4.14+dfsg-1.
+
+	These problems were fixed upstream in the 1.4.14 release.
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository to
+	200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200

@@ -1,3 +1,4 @@
+[[!meta date="2010-12-13 02:17:06 UTC"]]
 	Matt Taggart uploaded new packages for wordpress which fixed the
 	following security problems:
 

@@ -1,3 +1,4 @@
+[[!meta date="2010-10-10 12:48:45 UTC"]]
 	Gerfried Fuchs uploaded new packages for postgresql-8.4 which fixed the
 	following security problem:
 

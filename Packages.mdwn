@@ -21,6 +21,7 @@ Distribution:
 
 <option value="squeeze-backports" selected="selected">squeeze-backports</option>
 <option value="lenny-backports">lenny-backports</option>
+<option value="lenny-backports-sloppy">lenny-backports-sloppy</option>
 </select>
 </form>
 

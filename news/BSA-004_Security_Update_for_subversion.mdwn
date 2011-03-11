@@ -1,3 +1,4 @@
+[[!meta date="2010-10-10 09:30:09 UTC"]]
 	Peter Samuelson uploaded new packages for subversion which fixed the
 	following security problems:
 
