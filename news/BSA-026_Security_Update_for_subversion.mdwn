@@ -1,0 +1,32 @@
+[[!meta date="2011-03-14 15:28:35 UTC"]]
+	Peter Samuelson uploaded new packages for subversion which fixed the
+	following security problems:
+
+	CVE-2011-0715
+	  Subversion's mod_dav_svn Apache HTTPD server module will dereference
+	  a NULL pointer if a lock token is sent in a HTTP request by a
+	  Subversion client which has not authenticated to the server.
+	  http://subversion.apache.org/security/CVE-2011-0715-advisory.txt
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 1.6.12dfsg-5~bpo50+1.
+
+	For the stable distribution (squeeze) the problems have been fixed in
+	version 1.6.12dfsg-5.
+
+	For the unstable distribution (sid) the problems have been fixed in
+	version 1.6.16dfsg-1. This version is expected to be migrated to the
+	testing distribution (wheezy) shortly.
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository
+	to 200 so that new versions of installed backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
