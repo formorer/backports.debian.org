@@ -1,0 +1,31 @@
+[[!meta date="2011-03-27 13:08:57 UTC"]]
+	This update for the Network Security Service libraries marks several
+	fraudulent HTTPS certificates as unstrusted.
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 3.12,8-1+squeeze1~bpo50+1.
+
+	For the oldstable distribution (lenny), this problem has been fixed in
+	version 3.12.3.1-0lenny4.
+
+	For the stable distribution (squeeze), this problem has been fixed in
+	version 3.12.8-1+squeeze1.
+
+	For the unstable distribution (sid), this problem has been fixed in
+	version 3.12.9.with.ckbi.1.82-1.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository
+	to 200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
