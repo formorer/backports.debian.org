@@ -1,0 +1,31 @@
+[[!meta date="2011-03-30 15:16:12 UTC"]]
+	Julien Danjou uploaded new packages for squid3 which fixed the
+	following security problems:
+
+	CVE-2010-2951
+	  When IPv6 DNS resolution is not enabled, accesses an invalid socket
+	  during an IPv4 TCP DNS query, which allows remote attackers to cause
+	  a denial of service (assertion failure and daemon exit) via vectors
+	  that trigger an IPv4 DNS response with the TC bit set.
+
+	CVE-2010-3072
+	  Due to an internal error in string handling Squid is vulnerable to a
+	  denial of service attack when processing specially crafted requests.
+	  This problem allows any trusted client to perform a denial of service
+	  attack on the Squid service.
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 3.1.6-1.2~bpo50+1.
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository
+	to 200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
