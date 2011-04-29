@@ -2,10 +2,11 @@
 
 **Q: Where shall I report bugs I found in packages from backports to?**
 
-A: Please report them to the backports-users mailinglist. The Debian
-bugtracking system doesn't know anything about backports versions, and
+A: Please report them to the
+[debian-backports mailinglist](http://lists.debian.org/debian-backports/). The
+Debian bugtracking system doesn't know anything about backports versions, and
 sometimes the backporter isn't in the Debian packaging team so they might miss
-the report. 
+the report.
 
 **Q: When will the $arch build of $package be available?**
 
@@ -15,14 +16,14 @@ getting signed by the buildd admins. Those are often enough also busy with
 other work (or if time permits real life), which might also add to a delay in
 the uploads. You can check the status on the [Buildd Information
 Page](http://buildd.debian.org/status/) of the used buildd network, just enter
-your $package and don't forget to select the lenny-backports suite from the
+your $package and don't forget to select the squeeze-backports suite from the
 dropdown list. 
 
-**Q: What about dist-upgrade from squeeze-backports to wheezy?**
+**Q: What about dist-upgrade from lenny-backports to squeeze?**
 
 A: In general, backports.debian.org only has backports made from testing but with
 reduced version numbers (apt considers ~ lower than -), therefore the upgrade
-path from squeeze-backports to wheezy is save.
+path from lenny-backports to squeeze is save. 
 
 **Q: Is there security support for packages from backports.debian.org?*
 
