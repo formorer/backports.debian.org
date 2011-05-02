@@ -1,0 +1,101 @@
+[[!meta date="2011-04-20 15:41:06 UTC"]]
+	Jan Wagner uploaded new packages for request-tracker3.8 which fixed the
+	following security problems:
+
+	CVE-2011-1685
+	    If the external custom field feature is enabled, Request Tracker
+	    allows authenticated users to execute arbitrary code with the
+	    permissions of the web server, possible triggered by a cross-site
+	    request forgery attack.  (External custom fields are disabled by
+	    default.)
+
+	    http://security-tracker.debian.org/tracker/CVE-2011-1685
+
+	CVE-2011-1686
+	    Multiple SQL injection attacks allow authenticated users to obtain
+	    data from the database in an unauthorized way.
+
+	    http://security-tracker.debian.org/tracker/CVE-2011-1686
+
+	CVE-2011-1687
+	    An information leak allows an authenticated privileged user to
+	    obtain sensitive information, such as encrypted passwords, via the
+	    search interface.
+
+	    http://security-tracker.debian.org/tracker/CVE-2011-1687
+
+	CVE-2011-1688
+	    When running under certain web servers (such as Lighttpd), Request
+	    Tracker is vulnerable to a directory traversal attack, allowing
+	    attackers to read any files accessible to the web server.  Request
+	    Tracker instances running under Apache or Nginx are not affected.
+
+	    http://security-tracker.debian.org/tracker/CVE-2011-1688
+
+	CVE-2011-1689
+	    Request Tracker contains multiple cross-site scripting
+	    vulnerabilities.
+
+	    http://security-tracker.debian.org/tracker/CVE-2011-1689
+
+	CVE-2011-1690
+	    Request Tracker enables attackers to redirect authentication
+	    credentials supplied by legitimate users to third-party servers.
+
+	    http://security-tracker.debian.org/tracker/CVE-2011-1690
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 3.8.8-7+squeeze1~bpo50+1.
+
+	For the stable distribution (squeeze), these problems have been fixed
+	in version 3.8.8-7+squeeze1 of the request-tracker3.8 package.
+
+	For the testing distribution (wheezy) and the unstable distribution
+	(sid), these problems have been fixed in version 3.8.10-1 of the
+	request-tracker3.8 package.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+	    http://security-tracker.debian.org/tracker/CVE-2011-1688
+
+	CVE-2011-1689
+	    Request Tracker contains multiple cross-site scripting
+	    vulnerabilities.
+
+	    http://security-tracker.debian.org/tracker/CVE-2011-1689
+
+	CVE-2011-1690
+	    Request Tracker enables attackers to redirect authentication
+	    credentials supplied by legitimate users to third-party servers.
+
+	    http://security-tracker.debian.org/tracker/CVE-2011-1690
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 3.8.8-7+squeeze1~bpo50+1.
+
+	For the stable distribution (squeeze), these problems have been fixed
+	in version 3.8.8-7+squeeze1 of the request-tracker3.8 package.
+
+	For the testing distribution (wheezy) and the unstable distribution
+	(sid), these problems have been fixed in version 3.8.10-1 of the
+	request-tracker3.8 package.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin the backports repository to 200 so that new
+	versions of installed  backports will be installed automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200

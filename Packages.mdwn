@@ -19,8 +19,9 @@ Section:
 Distribution:
 <select name="suite">
 
-<option value="lenny-backports" selected="selected">lenny-backports</option>
-<option value="etch-backports">etch-backports</option>
+<option value="squeeze-backports" selected="selected">squeeze-backports</option>
+<option value="lenny-backports">lenny-backports</option>
+<option value="lenny-backports-sloppy">lenny-backports-sloppy</option>
 </select>
 </form>
 

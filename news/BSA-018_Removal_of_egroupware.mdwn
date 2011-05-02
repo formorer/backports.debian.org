@@ -1,0 +1,14 @@
+[[!meta date="2011-01-15 15:39:38 UTC"]]
+	 Following the removal of the egroupware packages from testing and
+	unstable because they were unmaintained and have outstanding unaddressed
+	security issues for a while the packages got now removed from
+	lenny-backports, too.
+
+	 If you have installed the egroupware suite please be aware that they
+	aren't maintained since a long while now and do contain some more
+	severse security issues. Unfortunately I'm not aware of a replacement to
+	suggest, so you either will have to track the groupware suite yourself
+	or look for an alternative.
+
+	 Sorry for the inconvenience,
+	Rhonda

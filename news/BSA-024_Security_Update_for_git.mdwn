@@ -1,0 +1,32 @@
+[[!meta  date="2011-02-14 09:09:06 UTC"]]
+	Sebastian Harl uploaded new packages for git which fixed the following
+	security problem:
+
+	CVE-2010-3906, Debian Bug #607248
+	  Cross-site scripting (XSS) vulnerability in Gitweb 1.7.3.3 and earlier
+	  allows remote attackers to inject arbitrary web script or HTML via the
+	  (1) f and (2) fp parameters.
+
+	For the lenny-backports distribution the problem has been fixed in
+	version 1:1.7.2.3-2.2~bpo50+1.
+
+	For the oldstable (lenny) distribution the problem has been fixed in
+	version 1:1.5.6.5-3+lenny3.3.
+
+	For the stable (squeeze), testing (wheezy) and unstable (sid)
+	distributions the problem has been fixed in version 1:1.7.2.3-2.2.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin the backports repository to 200 so that new
+	versions of installed  backports will be installed automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200

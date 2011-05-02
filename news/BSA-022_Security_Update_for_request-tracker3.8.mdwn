@@ -1,0 +1,32 @@
+[[!meta date="2011-01-24 07:22:34 UTC"]]
+	Jan Wagner uploaded new packages for request-tracker3.8 which fixed the
+	following security problems:
+
+	CVE-2011-0009
+	  It was discovered that Request Tracker, an issue tracking system,
+	  stored passwords in its database by using an insufficiently strong
+	  hashing method. If an attacker would have access to the password
+	  database, he could decode the passwords stored in it.
+
+	  http://security-tracker.debian.org/tracker/CVE-2011-0009
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 3.8.8-7~bpo50+1.
+
+	For the unstable (sid) distribution, the problem has been fixed in version
+	3.8.8-7, for testing (squeeze) the fix should follow soon.
+
+	Upgrade instructions
+	----------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin the backports repository to 200 so that new
+	versions of installed  backports will be installed automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
