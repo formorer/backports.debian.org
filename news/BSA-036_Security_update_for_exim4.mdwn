@@ -1,0 +1,28 @@
+[[!meta date="2011-05-14 14:31:58 UTC"]]
+	Andreas Metzler uploaded new packages for exim4 which fixed the
+	following security problems:
+
+	CVE-2011-1407
+	  command injection attack in DKIM processing code
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 4.72-6+squeeze2~bpo50+1.
+
+	For the stable distribution (squeeze), this problem has been fixed in
+	version 4.72-6+squeeze2.
+
+	For the unstable distribution (sid), this problem has been fixed in
+	version 4.76-1.
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository to
+	200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
