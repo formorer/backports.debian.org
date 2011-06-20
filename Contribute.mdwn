@@ -75,6 +75,8 @@ include the changelog entrys (but you are free to do so).
 users and if you want to support the package until support for the distribution
 you uploaded ends.
 
+If you feel you would need to diverge from these rules, either discuss it on the [mailinglist](http://lists.debian.org/debian-backpo»rts) or bring it up with the [Backports Team](mailto:team@backports.debian.org) for an exception.
+
 ###Uploads for old-stable backports
 
 With the release of a new stable version uploading packages with versions greater than in new stable or
