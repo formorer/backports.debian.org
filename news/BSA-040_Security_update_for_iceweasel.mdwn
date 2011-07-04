@@ -1,0 +1,67 @@
+[[!meta date="2011-07-04 07:11:09 UTC"]]
+	Mike Hommey uploaded new packages for iceweasel which fixed the
+	following security problems:
+
+	CVE-2011-0083 / CVE-2011-2363
+
+	   "regenrecht" discovered two use-after-frees in SVG processing, which
+	   could lead to the execution of arbitrary code.
+
+	CVE-2011-0085
+
+	   "regenrecht" discovered a use-after-free in XUL processing, which
+	   could lead to the execution of arbitrary code.
+
+	CVE-2011-2362
+
+	   David Chan discovered that cookies were insufficiently isolated.
+
+	CVE-2011-2371
+
+	   Chris Rohlf and Yan Ivnitskiy discovered an integer overflow in the
+	   Javascript engine, which could lead to the execution of arbitrary
+	   code.
+
+	CVE-2011-2373
+
+	   Martin Barbella discovered a use-after-free in XUL processing,
+	   which could lead to the execution of arbitrary code.
+
+	CVE-2011-2374
+
+	   Bob Clary, Kevin Brosnan, Nils, Gary Kwong, Jesse Ruderman and
+	   Christian Biesinger discovered memory corruption bugs, which may
+	   lead to the execution of arbitrary code.
+
+	CVE-2011-2376
+
+	   Luke Wagner and Gary Kwong discovered memory corruption bugs, which
+	   may lead to the execution of arbitrary code.
+
+	For the oldstable distribution (lenny), this problem has been fixed in
+	version 1.9.0.19-12 of the xulrunner source package.
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 3.5.16-8~bpo50+1.
+
+	For the stable distribution (squeeze), this problem has been fixed in
+	version 3.5.16-8.
+
+	For the unstable distribution (sid), this problem has been fixed in
+	version 5.0-1.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository to
+	200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
