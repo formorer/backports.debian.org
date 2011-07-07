@@ -1,0 +1,51 @@
+[[!meta date="2011-07-04 14:46:56 UTC"]]
+	Michael Tokarev uploaded new packages for qemu-kvm
+	which fixed the following security issues:
+
+	CVE-2011-0011
+
+	   Setting the VNC password to an empty string silently disabled
+	   all authentication.
+
+	CVE-2011-1750
+
+	   The virtio-blk driver performed insufficient validation of
+	   read/write I/O from the guest instance, which could lead to
+	   denial of service or privilege escalation.
+
+	CVE-2011-1751
+
+	   Incorrect memory handling during the removal of ISA devices in KVM
+	   could lead to denial of service of the execution of arbitrary code.
+
+	CVE-2011-2512
+
+	   incorrect sanitising of virtio queue commands in KVM could
+	   lead to denial of service of the execution of arbitrary code.
+
+	CVE-2010-2784
+
+	  The subpage MMIO initialization functionality in the subpage_register
+	  function in exec.c in KVM does not properly select the index for
+	  access to the callback array, which allows guest OS users to cause
+	  a denial of service (guest OS crash) or possibly gain privileges via
+	  unspecified vectors.
+
+	For the lenny-backports distribution the problem has been fixed
+	in version 0.12.5+dfsg-5+squeeze4~bpo50+1.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository
+	to 200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: * Pin: release a=lenny-backports Pin-Priority: 200
+
+	We recommend that you upgrade your qemu-kvm packages.
