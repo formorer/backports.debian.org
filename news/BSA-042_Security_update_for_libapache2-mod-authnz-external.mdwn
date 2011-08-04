@@ -1,0 +1,25 @@
+[[!meta date="2011-07-18 09:12:30 UTC"]]
+	Amaya Rodrigo uploaded new packages for libapache2-mod-authnz-external
+	which fixed the following security problems:
+
+	CVE-2011-2688
+	        Remotely exploitable SQL injection in the mysql auth module.
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 3.2.4-2~bpo50+1.1.
+
+	For the stable distribution (squeeze) the problems have been fixed in
+	version 3.2.4-2.1+squeeze1.
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository
+	to 200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
