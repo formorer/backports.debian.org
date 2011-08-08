@@ -1,0 +1,33 @@
+[[!meta date="2011-08-06 04:38:50 UTC"]]
+	Russ Allbery uploaded new packages for opensaml2 which fixed the
+	following security problems:
+
+	CVE-2011-1411
+
+	    Juraj Somorovsky, Andreas Mayer, Meiko Jensen, Florian Kohlar, Marco
+	    Kampmann and Joerg Schwenk discovered that OpenSAML is vulnerable to
+	    an XML signature wrapping attack that could allow a remote,
+	    unauthenticated attacker to craft messages that can be successfully
+	    verified but contain arbitrary content.  This may allow an attacker
+	    to subvert the security of software using OpenSAML and supply an
+	    unauthenticated login identity and data under the guise of a trusted
+	    issuer.
+
+	For the lenny-backports distribution, this problem has been fixed in
+	2.3-2+squeeze1~bpo50+1.
+
+	We recommend that you upgrade your opensaml2 packages and then restart
+	shibd and Apache if you have Shibboleth installed as well.
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository
+	to 200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
