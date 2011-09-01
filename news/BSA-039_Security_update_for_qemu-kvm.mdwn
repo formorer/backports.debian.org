@@ -46,6 +46,8 @@
 	to 200 so that new versions of installed  backports will be installed
 	automatically.
 
-	  Package: * Pin: release a=lenny-backports Pin-Priority: 200
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
 
 	We recommend that you upgrade your qemu-kvm packages.
