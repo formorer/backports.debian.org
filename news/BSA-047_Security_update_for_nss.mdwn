@@ -1,0 +1,42 @@
+[[!meta date="2011-09-06 06:10:10 UTC"]]
+	Several unauthorised SSL certificates have been found in the wild issued
+	for the DigiNotar Certificate Authority, obtained through a security
+	compromise with said company. Debian, like other software distributors,
+	has as a precaution decided to disable the DigiNotar Root CA by default
+	in the NSS crypto libraries.
+	
+	As a result from further understanding of the incident, this update to
+	DSA 2300 disables additional DigiNotar issuing certificates.
+	
+	For the lenny-backports distribution the problems have been fixed in
+	version 3.12.8-1+squeeze3~bpo50+1.
+	
+	For the squeeze-backports distribution the problems have been fixed in
+	version 3.12.11-3~bpo60+1.
+	
+	For the oldstable distribution (lenny), this problem has been fixed in
+	version 3.12.3.1-0lenny6.
+	
+	For the stable distribution (squeeze), this problem has been fixed in
+	version 3.12.8-1+squeeze3.
+	
+	For the unstable distribution (sid), this problem has been fixed in
+	version 3.12.11-3.
+	
+	We recommend that you upgrade your nss packages.
+	
+	Upgrade instructions
+	--------------------
+	
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+	
+	We recommend to pin (in /etc/apt/preferences) the backports repository
+	to 200 so that new versions of installed  backports will be installed
+	automatically.
+	
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
