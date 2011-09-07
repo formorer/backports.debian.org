@@ -1,0 +1,13 @@
+[[!meta date="2011-09-06 02:06:51 UTC"]]
+	Andres Salomon uploaded new packages for apache2 which fixed the
+	following security problems:
+	
+	CVE-2011-3192
+	        DoS by high memory usage for a large number of overlapping
+	        ranges.
+	
+	For the lenny-backports distribution the problems have been fixed in
+	version 2.2.16-6+squeeze3~bpo50+1.
+	
+	For the stable distribution (squeeze), this problem has been fixed in
+	version 2.2.16-6+squeeze3.
