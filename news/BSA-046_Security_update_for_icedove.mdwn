@@ -1,0 +1,42 @@
+[[!meta date="2011-08-26 20:23:59 UTC"]]
+	Christoph Göhre uploaded new packages for icedove which fixed the following
+	security problems:
+
+	CVE-2011-0084
+
+	  "regenrecht" discovered that incorrect pointer handling in the SVG
+	  processing code could lead to the execution of arbitrary code.
+
+	CVE-2011-2378
+
+	  "regenrecht" discovered that incorrect memory management in DOM
+	  processing could lead to the execution of arbitrary code.
+
+	CVE-2011-2981
+
+	  "moz_bug_r_a_4" discovered a Chrome privilege escalation
+	  vulnerability in the event handler code.
+
+	CVE-2011-2982
+
+	  Gary Kwong, Igor Bukanov, Nils and Bob Clary discovered memory
+	  corruption bugs, which may lead to the execution of arbitrary code.
+
+	CVE-2011-2983
+
+	  "shutdown" discovered an information leak in the handling of
+	  RegExp.input.
+
+	CVE-2011-2984
+
+	  "moz_bug_r_a4" discovered a Chrome privilege escalation vulnerability.
+
+
+	For the squeeze-backports distribution, this problem have been fixed in
+	version 3.1.12-1~bpo60+1.
+
+	For the testing distribution (wheezy), this problem has been fixed in
+	version 3.1.12-1.
+
+	For the unstable distribution (sid), this problem has been fixed in
+	version 3.1.12-1.
