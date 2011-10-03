@@ -1,0 +1,14 @@
+[[!meta date="2011-09-30 15:12:16 UTC"]]
+	Micah Anderson uploaded new packages for puppet which fixed the following
+	security problems:
+
+	CVE-2011-3848
+	 Resist directory traversal attacks through indirections.
+
+	 In various versions of Puppet it was possible to cause a directory
+	 traversal attack through the SSLFile indirection base class.  This was
+	 variously triggered through the user-supplied key, or the Subject of
+	 the certificate, in the code.
+
+	For the squeeze-backports distribution the problems have been fixed in
+	version 2.7.1-1~bpo60+2.
