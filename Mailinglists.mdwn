@@ -1,5 +1,5 @@
 We have the following mailinglists for debian-backports:
 
-* [Backports](http://lists.debian.org/debian-backports) - For bugreporting and discussions about debian-backports 
-* [Backports Announce](http://lists.debian.org/debian-backports-announce) - (Security) Announces for backports.debian.org
-* [Backports Changes](http://lists.debian.org/debian-backports-changes) - Messages from the backports queued and the Repository (DAK)
+* [Debian Backports](http://lists.debian.org/debian-backports/) - For bugreporting and discussions about debian-backports 
+* [Debian Backports Announce](http://lists.debian.org/debian-backports-announce/) - (Security) Announces for backports.debian.org
+* [Debian Backports Changes](http://lists.debian.org/debian-backports-changes/) - Messages from the backports queued and the Repository (DAK)

@@ -97,7 +97,7 @@ to make it run on stable.
 ##Security Uploads
 
 If you upload a package which fixes security related problems please send a gpg inline signed
-mail to the [backports-announce mailinglist](http://lists.debian.org/debian-backports-announce). 
+mail to the [debian-backports-announce mailinglist](http://lists.debian.org/debian-backports-announce). 
 
 In advance ask <team@backports.debian.org> for a new BSA number. 
 

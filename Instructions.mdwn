@@ -41,8 +41,8 @@ new packages via
 
 ##Subscribe to the security announce mailinglist
 
-If you want to get announcements about security updates on backports.debian.org subscribe to the [backports-announce mailinglist](http://lists.debian.org/debian-backports-announce). 
+If you want to get announcements about security updates on backports.debian.org subscribe to the [debian-backports-announce mailinglist](http://lists.debian.org/debian-backports-announce/). 
 
 ##Report Bugs
 
-Please report bugs that you found in the packages to the [backports mailinglist](http://lists.debian.org/debian-backports) and **NOT** to the Debian BTS! 
+Please report bugs that you found in the packages to the [backports mailinglist](http://lists.debian.org/debian-backports/) and **NOT** to the Debian BTS! 
