@@ -2,7 +2,7 @@
 	Micah Anderson uploaded new packages for puppet which fixed the
 	following security problems:
 
-	CVE-2011-3848=20
+	CVE-2011-3848
 	  Kristian Erik Hermansen reported that an unauthenticated
 	  directory traversal could drop any valid X.509 Certificate Signing
 	  Request at any location on disk, with the privileges of the Puppet
@@ -10,7 +10,7 @@
 	  the underlying vulnerability existed in earlier releases and could be
 	  accessed with different hostile inputs.
 
-	CVE-2011-3870=20
+	CVE-2011-3870
 	  Ricky Zhou discovered a potential local privilege escalation in the
 	  ssh_authorized_keys resource and theoretically in the Solaris and AIX
 	  providers, where file ownership was given away before it was written,
