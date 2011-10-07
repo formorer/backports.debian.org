@@ -1,0 +1,40 @@
+[[!meta date="2011-07-14 00:02:42 UTC"]]
+	Peter Samuelson uploaded new packages for subversion which fixed the
+	following security problems:
+	
+	CVE-2011-1752
+	  Subversion's mod_dav_svn Apache HTTPD server module will dereference
+	  a NULL pointer if asked to deliver baselined WebDAV resources.
+	  http://subversion.apache.org/security/CVE-2011-1752-advisory.txt
+	
+	CVE-2011-1783
+	  Subversion's mod_dav_svn Apache HTTPD server module may in certain
+	  scenarios enter a logic loop which does not exit and which allocates
+	  memory in each iteration, ultimately exhausting all the available
+	  memory on the server.
+	  http://subversion.apache.org/security/CVE-2011-1783-advisory.txt
+	
+	CVE-2011-1921
+	  Subversion's mod_dav_svn Apache HTTPD server module may leak to
+	  remote users the file contents of files configured to be unreadable
+	  by those users.
+	  http://subversion.apache.org/security/CVE-2011-1921-advisory.txt
+	
+	For the lenny-backports distribution the problems have been fixed in
+	version 1.6.12dfsg-6~bpo50+1.
+	
+	For the stable distribution (squeeze) the problems have been fixed in
+	version 1.6.12dfsg-6 [stable-sec].
+	
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+	
+	We recommend to pin (in /etc/apt/preferences) the backports repository to
+	200 so that new versions of installed  backports will be installed
+	automatically.
+	
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
