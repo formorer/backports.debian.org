@@ -1,0 +1,12 @@
+[[!meta date="2011-10-08 20:36:56 UTC"]]
+	Rene Engelhard uploaded new packages for libreoffice which fixed the
+	following security problems:
+
+	CVE-2011-2713
+	  Red Hat, Inc. security researcher Huzaifa Sidhpurwala reported multiple
+	  vulnerabilities in the binary Microsoft Word (doc) file format importer
+	  of OpenOffice.org, a full-featured office productivity suite that
+	  provides a near drop-in replacement for Microsoft(R) Office.
+
+	For the squeeze-backports distribution the problems have been fixed in
+	version 1:3.4.3-3~bpo60+1.
