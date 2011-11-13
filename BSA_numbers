@@ -55,3 +55,6 @@
 055 puppet
 056 iceweasel
 057 nss
+058 apache2
+059 libsndfile
+060 openssl
