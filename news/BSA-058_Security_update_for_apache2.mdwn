@@ -1,0 +1,13 @@
+[[!meta date="2011-11-14 04:20:22 UTC"]]
+	Andres Salomon uploaded new packages for apache2 which fixed the
+	following security problem:
+
+	CVE-2011-3348
+	        Possible denial of service in mod_proxy_ajp if combined with
+	        mod_proxy_balancer.
+
+	For the lenny-backports distribution the problem has been fixed in
+	version 2.2.16-6+squeeze4~bpo50+1.
+
+	For the stable distribution (squeeze), this problem has been fixed
+	in version 2.2.16-6+squeeze4.
