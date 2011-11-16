@@ -1,0 +1,46 @@
+[[!meta date="2011-11-11 14:05:42 UTC"]]
+	Mike Hommey uploaded new packages for icewease which fixed the
+	following security problems:
+
+	CVE-2011-3647
+
+	   "moz_bug_r_a4" discovered a privilege escalation vulnerability in
+	   addon handling.
+
+	CVE-2011-3648
+
+	   Yosuke Hasegawa discovered that incorrect handling of Shift-JIS
+	   encodings could lead to cross-site scripting.
+
+	CVE-2011-3650
+
+	   Marc Schoenefeld discovered that profiling the Javascript code
+	   could lead to memory corruption.
+
+	For the oldstable distribution (lenny), this problem has been fixed in
+	version 1.9.0.19-15 of the xulrunner source package.
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 3.5.16-11~bpo50+1.
+
+	For the stable distribution (squeeze), this problem has been fixed in
+	version 3.5.16-11.
+
+	For the unstable distribution (sid), this problem has been fixed in
+	version 8.0-1.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository
+	to 200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
