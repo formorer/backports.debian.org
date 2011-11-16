@@ -1,0 +1,13 @@
+[[!meta date="2011-11-14 04:20:30 UTC"]]
+	Andres Salomon uploaded new packages for libsndfile which fixed the
+	following security problems:
+
+	CVE-2011-2696
+	        Integer overflow by processing certain PARIS Audio Format
+	        (PAF) files.
+
+	For the lenny-backports distribution the problem has been fixed in
+	version 1.0.21-3+squeeze1~bpo50+1.
+
+	For the stable distribution (squeeze), this problem has been fixed
+	in version 1.0.21-3+squeeze1.
