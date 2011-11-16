@@ -1,0 +1,39 @@
+[[!meta date="2011-11-15 07:23:14 UTC"]]
+	This update to the NSS cryptographic libraries revokes the trust in the
+	"DigiCert Sdn. Bhd" certificate authority. More information can be found
+	in the Mozilla Security Blog:
+	http://blog.mozilla.com/security/2011/11/03/revoking-trust-in-digicert-sdn-bhd-intermediate-certificate-authority/
+
+	This update also fixes an insecure load path for pkcs11.txt configuration
+	file (CVE-2011-3640).
+
+	For the oldstable distribution (lenny), this problem has been fixed
+	in version 3.12.3.1-0lenny7.
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 3.12.8-1+squeeze4~bpo50+1.
+
+	For the stable distribution (squeeze), this problem has been fixed in
+	version 3.12.8-1+squeeze4.
+
+	For the squeeze-backports distribution the problems have been fixed
+	in version 3.13.1.with.ckbi.1.88-1~bpo60+1.
+
+	For the unstable distribution (sid), this problem has been fixed in
+	version 3.13.1.with.ckbi.1.88-1.
+
+	Upgrade instructions
+	--------------------
+
+	If you don't use pinning (see [1]) you have to update the package
+	manually via "apt-get -t lenny-backports install <packagelist>" with
+	the packagelist of your installed packages affected by this update.
+	[1] <http://backports.debian.org/Instructions>
+
+	We recommend to pin (in /etc/apt/preferences) the backports repository
+	to 200 so that new versions of installed  backports will be installed
+	automatically.
+
+	  Package: *
+	  Pin: release a=lenny-backports
+	  Pin-Priority: 200
