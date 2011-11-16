@@ -1,0 +1,20 @@
+[[!meta date="2011-11-14 04:20:38 UTC"]]
+	Andres Salomon uploaded new packages for openssl which fixed the
+	following security problems:
+
+	CVE-2011-3210
+	        Unsafe thread handling in ECDH ciphersuite allow denial of
+	        service attack.
+
+	CVE-2011-1945
+	        Timing attacks against ECDHE_ECDSA private keys.
+
+	CVE-2011-0014
+	        Remote denial of service attacks possible or information leak
+	        via malformed handshake messages.
+
+	For the lenny-backports distribution the problems have been fixed in
+	version 0.9.8o-4squeeze4~bpo50+1.
+
+	For the stable distribution (squeeze), the problems have been fixed
+	in version 0.9.8o-4squeeze4.
