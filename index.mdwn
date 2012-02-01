@@ -2,8 +2,14 @@
 
 You are running Debian stable, because you prefer the Debian stable tree. It runs great, there is just one problem: the software is a little bit outdated compared to other distributions. This is where backports come in.
 
-Backports are recompiled packages from testing (mostly) and unstable (in a few cases only, e.g. security updates) in a stable environment so that they will run without new libraries (whenever it is possible) on a Debian stable distribution. It is recommended to select single backports which fit your needs, and not to use all available backports.
+Backports are recompiled packages from testing (mostly) and unstable (in a few cases only, e.g. security updates) in a stable environment so that they will run without new libraries (whenever it is possible) on a Debian stable distribution
 
+Backports cannot be tested as extensively as Debian stable, and backports
+are provided on an as-is basis, with risk of incompatibilities with other
+components in Debian stable. Use with care!
+
+It is therefore recommended to select single backported packages that fit
+your needs, and not use all available backports.
 
 ##Where to start
 
