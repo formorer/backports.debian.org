@@ -1,5 +1,20 @@
 [[!toc  startlevel=2]]
 
+## About backports ##
+
+Backports are recompiled packages from testing (mostly) and unstable (in a few
+cases only, e.g. security updates) in a stable environment so that they will
+run without new libraries (whenever it is possible) on a Debian stable
+distribution
+
+Backports cannot be tested as extensively as Debian stable, and backports
+are provided on an as-is basis, with risk of incompatibilities with other
+components in Debian stable. Use with care!
+
+It is therefore recommended to select single backported packages that fit
+your needs, and not use all available backports.
+
+
 ##Add backports to your sources.list 
 
 1. Add this line 
