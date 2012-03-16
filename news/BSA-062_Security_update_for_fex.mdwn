@@ -1,0 +1,18 @@
+[[!meta date="2012-02-26 15:00:26 UTC"]]
+	Kilian Krause uploaded new packages for fex which fixed the
+	following security problems:
+
+	CVE-2012-0869, CVE-2012-1293 (see also DSA 2414-1 and 2412-2)
+
+	Nicola Fioravanti discovered that F*EX, a web service for transferring
+	very large files, is not properly sanitizing input parameters of the "fup"
+	script.  An attacker can use this flaw to conduct reflected cross-site
+	scripting attacks via various script parameters.
+
+	For the squeeze-backports distribution the problems have been fixed in
+	version 20120215-3~bpo60+1.
+
+	The Debian stable and unstable distribution are already fixed, testing (wheezy)
+	will receive this update in the next days.
+
+	We recommend that you upgrade your fex packages.
