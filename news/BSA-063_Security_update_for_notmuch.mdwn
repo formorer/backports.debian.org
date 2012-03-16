@@ -1,0 +1,22 @@
+[[!meta date="2012-03-15 19:15:15 UTC"]]
+	David Bremner uploaded new packages for notmuch which fixed the
+	following security problems:
+
+	DSA-2416-1 notmuch -- information disclosure
+
+	When using the Emacs interface, a user could be tricked into replying to
+	a maliciously formatted message which could lead to files from the local
+	machine being attached to the outgoing message.
+
+	For the squeeze-backports distribution the problems have been fixed in
+	version
+
+	        0.11.1~bpo60+1
+
+	For wheezy (testing) and sid (unstable) this was fixed in version
+
+	        0.11.1-1
+
+	For squeeze (stable), this is fixed in version
+
+	        0.3.1+squeeze1
