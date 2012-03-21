@@ -1,0 +1,20 @@
+[[!meta date="2012-03-17 20:03:42 UTC"]]
+	Gabriele Giacone uploaded new packages for gnash which fixed the
+	following security problem:
+
+	CVE-2012-1175
+
+	  Tielei Wang from Georgia Tech Information Security Center discovered a
+	  vulnerability in GNU Gnash which is caused due to an integer overflow
+	  error and can be exploited to cause a heap-based buffer overflow by
+	  tricking a user into opening a specially crafted SWF file.
+
+
+	For the stable distribution (squeeze), this problem has been fixed in
+	version 0.8.8-5+squeeze1.
+
+	For the squeeze-backports distribution, this problem has been fixed in
+	version 0.8.10-5~bpo60+1.
+
+	For the unstable distribution (sid), this problem has been fixed in
+	version 0.8.10-5.
