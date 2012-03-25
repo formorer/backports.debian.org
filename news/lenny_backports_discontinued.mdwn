@@ -1,0 +1,14 @@
+Following the normal Debian Archive lenny-backports is now discontinued. That
+means that no upload will be possible anymore and lenny-backports(-sloppy)
+get moved to archive.debian.org. If you haven't updated yet - now is the time
+to move to squeeze.
+
+Some numbers about lenny-backports and lenny-backports-sloppy:
+
+- Source packages: lenny-backports: 667 - sloppy: 21
+- Uploads: lenny-backports: 1445 - sloppy: 51
+- Contributors: lenny-backports: 146 - sloppy: 17
+
+Without all those contributors lenny-backports wouldn't have been possible.
+Thank you very much for your support!
+
