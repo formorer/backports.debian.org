@@ -1,0 +1,23 @@
+[[!meta date="2012-03-23 06:56:21 UTC"]]
+	Paul Wise uploaded new packages for freetype which fixed the
+	following security problems:
+
+	CVE-2011-3439
+	        FreeType allows remote attackers to execute arbitrary code or
+	        cause a denial of service (memory corruption) via a crafted
+	        font, a different vulnerability than CVE-2011-3256.
+
+	CVE-2011-3256
+	        FreeType before 2.4.7 allows remote attackers to execute
+	        arbitrary code or cause a denial of service (memory corruption)
+	        via a crafted font, a different vulnerability than
+	        CVE-2011-0226.
+
+	CVE-2011-0226
+	        Integer signedness error in psaux/t1decode.c in FreeType before
+	        2.4.6 allows remote attackers to execute arbitrary code or cause
+	        a denial of service (memory corruption and application crash)
+	        via a crafted Type 1 font.
+
+	For the squeeze-backports distribution the problems have been fixed in
+	version 2.4.8-1~bpo60+1.
