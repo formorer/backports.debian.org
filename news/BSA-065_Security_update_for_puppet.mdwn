@@ -1,0 +1,17 @@
+[[!meta date="2012-03-21 15:12:26 UTC"]]
+	Micah Anderson uploaded new packages for puppet which fixed the
+	following security problems: CVE-2012-1053 and CVE-2012-1054
+
+	    CVE-2012-1053
+
+	    Puppet runs execs with an unintended group privileges,
+	    potentially leading to privilege escalation.
+
+	    CVE-2012-1054
+
+	    The k5login type writes to untrusted locations, enabling
+	    local users to escalate their privileges if the k5login type is
+	    used.
+
+	For the squeeze-backports distribution the problems have been fixed in
+	version 2.7.11-1~bpo60+1.
