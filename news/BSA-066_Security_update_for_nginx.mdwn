@@ -1,0 +1,24 @@
+[[!meta date="2012-03-21 17:39:24 UTC"]]
+	Cyril Lavier uploaded new packages for nginx which fixed the
+	following security problems:
+
+	DSA-2434-1 nginx -- sensitive information leak
+
+	Matthew Daley discovered a memory disclosure vulnerability in nginx. In
+	previous versions of this web server, an attacker can receive the
+	content of previously freed memory if an upstream server returned a
+	specially crafted HTTP response, potentially exposing sensitive
+	information.
+
+	For the squeeze-backports distribution the problems have been fixed in
+	version
+
+	    1.1.17-2~bpo60+1
+
+	For wheezy (testing) and sid (unstable) this was fixed in version
+
+	    1.1.17-2
+
+	For squeeze (stable), this was fixed in version
+
+	    0.7.67-3+squeeze2
