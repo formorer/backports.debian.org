@@ -14,7 +14,6 @@
 
 #Miscellaneous
 
-* [Lenny uploaders](/changes/lenny-backports.html)
 * [Squeeze uploaders](/changes/squeeze-backports.html)
 * [NEW Queue](/dak/new.html)
 * [[diffstats|squeeze-backports/overview]]
