@@ -32,20 +32,7 @@ of course you can use aptitude as well:
 
      aptitude -t squeeze-backports install "package"
 
-##Get packages upgraded from backports.debian.org (Recommended!, only for lenny-backports(-sloppy)) 
-
-Normally packages won't get upgraded automatically from backports.debian.org (due to the NotAutomatic flag). To get packages that you have installed from backports automatically updated you have to have add a pinning, either to /etc/apt/preferences: 
-
-    Package: *
-    Pin: release a=lenny-backports
-    Pin-Priority: 200
-
-**This setting is recommended** 
-
-**Without this setting you don't get security updates**
-
-**This is not necessary for squeeze-backports**
-
+<!---
 ##lenny-backports-sloppy
 
 To guarantee a clean upload path from lenny-backports to squeeze it is not allowed to upload backports from wheezy to lenny-backports. 
@@ -54,6 +41,7 @@ To allow new backports also in old-stable we created a new suite for everybody t
 new packages via
 	apt-get -t lenny-backports-sloppy install <packages>
 
+-->
 ##Subscribe to the security announce mailinglist
 
 If you want to get announcements about security updates on backports.debian.org subscribe to the [debian-backports-announce mailinglist](http://lists.debian.org/debian-backports-announce/). 
