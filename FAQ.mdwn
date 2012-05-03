@@ -46,3 +46,11 @@ or
 
     aptitude search '?narrow(?version(CURRENT),?origin(Debian Backports))' -F '%100p'
 
+**Q: Why are there no more backports of Mozilla products anymore?**
+
+A: Backports of Mozilla products (Firefox, Thunderbird, Seamonkey; aka
+Iceweasel, Icedove, Iceape) are maintained by the Debian Mozilla Team
+independently on [mozilla.debian.net](http://mozilla.debian.net/),
+because the offered variety of version exceeds what is possible within
+the rules for Debian Backports as it e.g. includes backports of
+packages not yet in testing or beta and even alpha releases.
