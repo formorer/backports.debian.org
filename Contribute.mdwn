@@ -27,17 +27,10 @@ debian-backports already), you can add
     };
     1
 
-to your *~/.dupload.conf* file. For dput, use the following in *~/.dput.cf*:
-
-    [bpo]
-    fqdn = backports-master.debian.org
-    incoming = /pub/UploadQueue/
-    method = ftp
-    login = anonymous
-    allow_dcut = 1
+to your *~/.dupload.conf* file. For dput, the upload host "backports" is defined in the global configuration already.  If you formerly used a snippet in your *~/.dput.cf* file, be invited to remove that again.
 
 
-###Non Debian Developer 
+###Non Debian Developer
 
 If you are not a Debian Developer, please upload your backport somewhere
 (binaries and sources, e.g. to mentors.debian.net), post a link to its .dsc
