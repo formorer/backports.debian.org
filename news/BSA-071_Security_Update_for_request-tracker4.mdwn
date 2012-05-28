@@ -1,0 +1,38 @@
+[[!meta date="Mon May 28 08:49:45 UTC 2012"]
+	Dominic Hargreaves uploaded new packages for request-tracker4 which fixed
+	the following security problems:
+
+	CVE-2011-2082
+
+	   The vulnerable-passwords scripts introduced for CVE-2011-0009
+	   failed to correct the password hashes of disabled users.
+
+	CVE-2011-2083
+
+	   Several cross-site scripting issues have been discovered.  
+
+	CVE-2011-2084
+
+	   Password hashes could be disclosed by privileged users.
+
+	CVE-2011-2085
+
+	   Several cross-site request forgery vulnerabilities have been
+	   found. If this update breaks your setup, you can restore the old
+	   behaviour by setting $RestrictReferrer to 0.
+
+	CVE-2011-4458
+
+	   The code to support variable envelope return paths allowed the
+	   execution of arbitrary code.
+
+	CVE-2011-4459
+
+	   Disabled groups were not fully accounted as disabled.
+
+	CVE-2011-4460
+
+	   SQL injection vulnerability, only exploitable by privileged users.
+
+	For the squeeze-backports distribution the problems have been fixed in
+	version 4.0.5-3~bpo60+1.
