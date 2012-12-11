@@ -30,7 +30,7 @@ All backports are deactivated by default (i.e. the packages are pinned to 100 by
 
 of course you can use aptitude as well:
 
-     aptitude -t squeeze-backports install "package"
+    aptitude -t squeeze-backports install "package"
 
 <!---
 ##lenny-backports-sloppy
