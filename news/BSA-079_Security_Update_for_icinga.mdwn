@@ -1,0 +1,17 @@
+[[!meta date="2013-01-14 13:00:37 UTC"]]
+	Jan Wagner uploaded new packages for icinga which fixed the following
+	security problems:
+	
+	CVE-2012-6096
+	  CGI buffer overflows
+	
+	  https://security-tracker.debian.org/tracker/CVE-2012-6096
+	
+	For the squeeze-backports distribution the problems have been fixed in
+	version 1.7.1-5~bpo60+1 of the icinga package.
+	
+	For the testing distribution (wheezy) these problems will be fixed
+	soon.
+	
+	For the unstable distribution (sid), these problems have been fixed in
+	version 1.7.1-5 of the icinga package.

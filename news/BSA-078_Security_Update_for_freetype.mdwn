@@ -1,0 +1,10 @@
+[[!meta date="2013-01-09 13:28:35 UTC"]]
+	Paul Wise uploaded new packages for freetype which fixed the
+	following security problems:
+	
+	CVE-2012-5668: NULL Pointer Dereference in bdf_free_font.
+	CVE-2012-5669: Out-of-bounds read in _bdf_parse_glyphs.
+	CVE-2012-5670: Out-of-bounds write in _bdf_parse_glyphs.
+	
+	For the squeeze-backports distribution the problems have been fixed in
+	version 2.4.9-1.1~bpo60+1.
