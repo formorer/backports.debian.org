@@ -11,7 +11,7 @@ follow these guidelines.
 
 ###Debian Developers
 
-All Debian Developers (DD) can get their uid to the backports ACL. If
+All Debian Developers (DD) can get their uid into the backports ACL. If
 you want to get include please open a ticket in the debian [request
 tracker](https://rt.debian.org/Ticket/Create.html?Queue=20)
 - please use the backports queue for the ticket. (See
