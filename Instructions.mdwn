@@ -37,7 +37,7 @@ of course you can use aptitude as well:
 
 ##squeeze-backports-sloppy
 
-To guarantee a clean upload path from squeeze-backports to wheezy it is not allowed to upload backports from jessy to squeeze-backports. 
+To guarantee a clean upload path from squeeze-backports to wheezy it is not allowed to upload backports from jessie to squeeze-backports. 
 To allow new backports also in squeeze we created a new suite for everybody that prefer newer packages above a clean upgrade path:
 **squeeze-backports-sloppy**. You can use it exactly as squeeze-backports, just add another line to your **sources.list** and install 
 new packages via
