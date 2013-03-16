@@ -17,9 +17,12 @@ your needs, and not use all available backports.
 
 ##Add backports to your sources.list 
 
-1. Add this line 
-    <pre>deb http://backports.debian.org/debian-backports squeeze-backports main</pre>
+1.  For squeeze add this line 
+    <pre>deb http://<yourmirror>.debian.org/debian-backports squeeze-backports(-sloppy) main</pre>
     to your **sources.list** (or add a new file with the ".list" extension to /etc/apt/sources.list.d/)
+    For wheezy add this line
+    <pre>deb http://<yourmirror>.debian.org/debian wheezy-backports main</pre> to your **sources.list** 
+    (or add a new file with the ".list" extension to /etc/apt/sources.list.d/)
 2. Run **apt-get update**
 
 ##Install a package from backports
@@ -32,14 +35,13 @@ of course you can use aptitude as well:
 
     aptitude -t squeeze-backports install "package"
 
-<!---
-##lenny-backports-sloppy
+##squeeze-backports-sloppy
 
-To guarantee a clean upload path from lenny-backports to squeeze it is not allowed to upload backports from wheezy to lenny-backports. 
-To allow new backports also in old-stable we created a new suite for everybody that prefer newer packages above a clean upgrade path:
-**lenny-backports-sloppy**. You can use it exactly as lenny-backports, just add another line to your **sources.list** and install 
+To guarantee a clean upload path from squeeze-backports to wheezy it is not allowed to upload backports from jessy to squeeze-backports. 
+To allow new backports also in squeeze we created a new suite for everybody that prefer newer packages above a clean upgrade path:
+**squeeze-backports-sloppy**. You can use it exactly as squeeze-backports, just add another line to your **sources.list** and install 
 new packages via
-	apt-get -t lenny-backports-sloppy install <packages>
+	apt-get -t squeeze-backports-sloppy install <packages>
 
 -->
 ##Subscribe to the security announce mailinglist

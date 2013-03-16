@@ -11,24 +11,16 @@ follow these guidelines.
 
 ###Debian Developers
 
-All Debian Developers (DD) can get their key added to the backports keyring. If
+All Debian Developers (DD) can get their uid to the backports ACL. If
 you want to get include please open a ticket in the debian [request
 tracker](https://rt.debian.org/Ticket/Create.html?Queue=20)
 - please use the backports queue for the ticket. (See
 [wiki](http://wiki.debian.org/rt.debian.org) for more information about the
-request tracker). Once your key is imported, you can start uploading. If you
-are using dupload on testing/sid (there is a patched version of dput on
-debian-backports already), you can add
+request tracker). Once your key is imported, you can start uploading. 
 
-    package config;
-    $cfg{'bpo'} = {
-      fqdn => "backports-master.debian.org",
-      incoming => "/pub/UploadQueue/",
-    };
-    1
-
-to your *~/.dupload.conf* file. For dput, the upload host "backports" is defined in the global configuration already.  If you formerly used a snippet in your *~/.dput.cf* file, be invited to remove that again.
-
+The upload happens in the same way as normal uploads to the archive happens,
+just the distribution have to match one of the backports distributions (squeeze-backports, 
+squeeze-backports-sloppy, wheezy-backports)
 
 ###Non Debian Developer
 
@@ -48,7 +40,7 @@ create and maintain the backport.
 ###Basic Rules 
 
 * [Subscribe to the backports mailinglist](http://lists.debian.org/debian-backports/). Every announcement and bugreport should come over this mailinglist, so this is a must.
-* Use "squeeze-backports" as distribution, neither "stable" nor "unstable".
+* Use "squeeze-backports", "squeeze-backports-sloppy" or "wheezy-backports" as distribution, neither "stable" nor "unstable".
 * Make sure that you have a proper build environment which only contains squeeze and no unneeded backports. Maybe you want to consider pbuilder or cowbuilder for building packages.
 * Append "~bpo${debian_release}+${build_int}" to the version number, e.g. "1.2.3-4" now becomes "1.2.3-4~bpo60+1", or for native packages, "1.2.3" becomes "1.2.3~bpo60+1".
 * Please only upload package with a noteable userbase. User request for the package may be an indicator.
@@ -61,7 +53,7 @@ packages like the kernel, xorg or oo.org.
 * Do not do any changes to the package beside of backporting stuff.
 * Include all changelog entries since the last version on debian-backports or
 since stable if it's the first version. You should do this by passing
-"-v<version>" to dpkg-buildpackage. Eg: "debuild -sa -v0.7.5-2", where
+"-v<version>" to dpkg-buildpackage. Eg: "debuild -v0.7.5-2", where
 "0.7.5-2" is the version in stable. If the package wasn't in stable or backports before you don't have 
 include the changelog entrys (but you are free to do so).
 * Before uploading please think about how useful the package is for stable
@@ -70,14 +62,13 @@ you uploaded ends.
 
 If you feel you would need to diverge from these rules, either discuss it on the [mailinglist](http://lists.debian.org/debian-backports/) or bring it up with the [Backports Team](mailto:team@backports.debian.org) for an exception.
 
-<!---
+
 ###Uploads for old-stable backports
 
 With the release of a new stable version uploading packages with versions greater than in new stable or
 new stable-security are not allowed. If you want newer package versions in old-stable-backports we created a 
 new suite for that: old-stable-backports-sloppy. So if you want to upload a package from wheezy to lenny-backports 
 use lenny-backports-sloppy a distribution. 
--->
 
 ###Additionally
 
