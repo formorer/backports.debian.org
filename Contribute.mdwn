@@ -22,6 +22,9 @@ The upload happens in the same way as normal uploads to the archive happens,
 just the distribution have to match one of the backports distributions (squeeze-backports, 
 squeeze-backports-sloppy, wheezy-backports)
 
+**The special host in dupload/dput that was needed in the past is now obsolete and doesn't work
+anymore.**
+
 ###Non Debian Developer
 
 If you are not a Debian Developer, please upload your backport somewhere
