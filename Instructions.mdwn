@@ -44,7 +44,6 @@ To allow new backports also in squeeze we created a new suite for everybody that
 new packages via
 	apt-get -t squeeze-backports-sloppy install <packages>
 
--->
 ##Subscribe to the security announce mailinglist
 
 If you want to get announcements about security updates on backports.debian.org subscribe to the [debian-backports-announce mailinglist](http://lists.debian.org/debian-backports-announce/). 

@@ -108,8 +108,8 @@ Your mail should follow this template:
 
     <other distributions if any> 
   
-<!---
-  ---- This is only necessary for old-stable ----- 
+<!--
+  ---- This is only necessary for old-stable ---- 
     Upgrade instructions
     --------------------
   
