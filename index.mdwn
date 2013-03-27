@@ -2,7 +2,7 @@
 
 You are running Debian stable, because you prefer the Debian stable tree. It runs great, there is just one problem: the software is a little bit outdated compared to other distributions. This is where backports come in.
 
-Backports are packages from taken from the next Debian release (called
+Backports are packages taken from the next Debian release (called
 "testing"), adjusted and recompiled for usage on Debian stable. Because the
 package is also present in the next Debian release, you can easily upgrade your
 stable+backports system once the next Debian release comes out. (In a few
