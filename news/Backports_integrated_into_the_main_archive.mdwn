@@ -1,0 +1,43 @@
+	      Dear users of the backports service!
+
+	 The Backports Team is pleased to announce the next important step
+	on getting backports more integrated.  People who are reading
+	debian-infrastructure-announce[1] will have seen that there was an
+	archive maintenance last weekend: starting with wheezy-backports the
+	packages will be accessible from the regular pool instead of a separate
+	one.
+
+
+	== For Users ==
+
+	 What exactly does that mean for you?  For users of wheezy, the
+	sources.list entry will be different, a simple substitute of squeeze
+	for wheezy won't work.  The new format is:
+
+	 deb http://ftp.debian.org/debian/ wheezy-backports main
+
+	 So it is debian instead of debian-backports, and offered through the
+	regular mirror network.  Feel invited to check your regular mirror if
+	it carries backports and pull from there.
+
+
+	== For Contributers ==
+
+	 Please read the mail to debian-devel-announce[5] instead. :)
+
+	 Just one thing mentioned here:  technically wheezy-backports and
+	squeeze-backports-sloppy have been opened with this move too.  Only, the Buildd
+	Team needs some days to set up the buildd network for the new suites, so please
+	be a bit more patient.
+
+
+	== Thanks ==
+
+	 Finally, we want to thank the FTP-Master Team for their fine work on
+	making this happen.
+
+	 The documentation on backports-master[2] has been updated, and in
+	case of any doubt or question, feel free to ask them on either the
+	debian-backports mailinglist[3], or in case of sensitive topics ask
+	us[4] directly.
+
