@@ -17,6 +17,6 @@
 * [Squeeze uploaders](/changes/squeeze-backports.html)
 * [Squeeze-sloppy uploaders](/changes/squeeze-backports-sloppy.html)
 * [Wheezy uploaders](/changes/wheezy-backports.html)
-* [NEW Queue](/dak/new.html)
+* [NEW Queue](http://ftp-master.debian.org/backports-new.html)
 * [[diffstats|squeeze-backports/overview]]
 * [Feedback](mailto:debian-backports@lists.debian.org)
