@@ -63,7 +63,7 @@ include the changelog entrys (but you are free to do so).
 users and if you want to support the package until support for the distribution
 you uploaded ends.
 
-If you feel you would need to diverge from these rules, either discuss it on the [mailinglist](http://lists.debian.org/debian-backports/) or bring it up with the [Backports Team](mailto:team@backports.debian.org) for an exception.
+If you feel you would need to diverge from these rules, either discuss it on the [mailinglist](http://lists.debian.org/debian-backports/) or bring it up with the [Backports Team](mailto:backports-team@debian.org) for an exception.
 
 
 ###Uploads for old-stable backports
@@ -88,7 +88,7 @@ to make it run on stable.
 If you upload a package which fixes security related problems please send a gpg inline signed
 mail to the [debian-backports-announce mailinglist](http://lists.debian.org/debian-backports-announce). 
 
-In advance ask <team@backports.debian.org> for a new BSA number. 
+In advance ask <backports-team@debian.org> for a new BSA number. 
 
 Your mail should follow this template:
 

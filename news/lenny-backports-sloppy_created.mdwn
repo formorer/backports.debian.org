@@ -49,7 +49,7 @@
 
 	 In case of questions, feel free to ask either directly on the
 	debian-backports@lists.debian.org mailinglist, or contact
-	team@backports.debian.org privately.
+	backports-team@debian.org privately.
 
 	 We are also pleased to annonce that the first upload to
 	lenny-backports-sloppy already happened. From now on you will be able
