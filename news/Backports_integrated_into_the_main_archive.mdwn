@@ -22,7 +22,7 @@
 
 	For squeeze nothing changed.
 
-	deb http://ftp.debian.org/debian-backports/ squeeze-backports(-sloppy) main
+	deb http://backports.debian.org/debian-backports/ squeeze-backports(-sloppy) main
 
 	continues to work for the whole squeeze lifetime.
 
