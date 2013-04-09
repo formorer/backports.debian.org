@@ -20,6 +20,11 @@
 	regular mirror network.  Feel invited to check your regular mirror if
 	it carries backports and pull from there.
 
+	For squeeze nothing changed.
+
+	deb http://ftp.debian.org/debian-backports/ squeeze-backports(-sloppy) main
+
+	continues to work for the whole squeeze lifetime.
 
 	== For Contributers ==
 
