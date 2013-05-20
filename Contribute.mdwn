@@ -134,7 +134,7 @@ The Mailinglist is moderated so please be a little bit patient if your post does
 
 ###Check NEW queue
 
-Check the NEW queue at <http://backports.debian.org/dak/new.html> to avoid
+Check the NEW queue at <http://ftp-master.debian.org/backports-new.html> to avoid
 double efforts before you start to backport something. 
 
 ###Inform the Maintainer 
