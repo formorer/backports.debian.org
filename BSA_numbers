@@ -77,3 +77,6 @@
 078 freetype
 079 icinga
 080 nginx
+081 request-tracker4
+082 haproxy
+083 xml-security-c
