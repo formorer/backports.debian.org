@@ -18,14 +18,14 @@
 018 egroupware removal
 019 kvm removal
 020 openoffice.org
-021 syslog-ng
+021-syslog-ng
 022 request-tracker3.8
 023 drupal6
 024 git
 025 openafs
 026 subversion
 027 iceweasel
-028 wordpress
+028-wordpress
 029 iceweasel
 030 nss
 031 squid3
@@ -40,9 +40,9 @@
 040 iceweasel
 041 xml-security-c
 042 libapache2-mod-authnz-external
-043 libvirt
+043-libvirt
 044 opensaml2
-045 drupal7
+045-drupal7
 046 icedove
 047 nss
 048 iceweasel
@@ -51,7 +51,7 @@
 051 puppet
 052 roundcube
 053 libreoffice
-054 openoffice
+054-openoffice
 055 puppet
 056 iceweasel
 057 nss
@@ -64,23 +64,24 @@
 064 gnash
 065 puppet
 066 nginx
+067-
 068 freetype
 069 nginx
 070 samba
 071 requestracker
-072 bitcoin
+072-bitcoin
 073 strongswan
 074 libreoffice
-075 nsd3
+075-nsd3
 076 libreofice
-077 devscripts
+077-devscripts
 078 freetype
 079 icinga
 080 nginx
 081 request-tracker4
 082 haproxy
 083 xml-security-c
-084 darktable
-085 roundcube
-086 strongswan
-087 openssh
+084-darktable
+085-roundcube
+086-strongswan
+087-openssh
