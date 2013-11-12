@@ -1,0 +1,34 @@
+[[!meta date="2013-06-19 18:45:09 UTC"]]
+	Russ Allbery uploaded new packages for xml-security-c that fixed the
+	following security problems discovered by James Forshaw from Context
+	Information Security:
+
+	CVE-2013-2153
+
+	    The implementation of XML digital signatures in the Santuario-C++
+	    library is vulnerable to a spoofing issue allowing an attacker to
+	    reuse existing signatures with arbitrary content.
+
+	CVE-2013-2154
+
+	    A stack overflow, possibly leading to arbitrary code execution,
+	    exists in the processing of malformed XPointer expressions in the
+	    XML Signature Reference processing code.
+
+	CVE-2013-2155
+
+	    A bug in the processing of the output length of an HMAC-based XML
+	    Signature would cause a denial of service when processing specially
+	    chosen input.
+
+	CVE-2013-2156
+
+	    A heap overflow exists in the processing of the PrefixList attribute
+	    optionally used in conjunction with Exclusive Canonicalization,
+	    potentially allowing arbitary code execution.
+
+	For the squeeze-backports distribution, the problems have been fixed in
+	version 1.6.1-5+deb7u1~bpo60+1.
+
+	We recommend that you upgrade your xml-security-c packages, particularly
+	libxml-security-c16, if it was installed via backports.

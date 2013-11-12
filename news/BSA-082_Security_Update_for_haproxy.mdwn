@@ -1,0 +1,24 @@
+[[!meta date="2013-06-19 20:59:41 UTC"]]
+	One security issue has been found in HAProxy, a load-balancing reverse
+	proxy:
+
+	CVE-2013-2175
+
+	    Denial of service in parsing HTTP headers.
+
+	For the backports for the oldstable distribution
+	(squeeze-backports-sloppy), the problem has been fixed in version
+	1.4.24-1~bpo60+1.
+
+	For the backports for the stable distribution (wheezy-backports), the
+	problem has been fixed in version 1.4.24-1~bpo70+1.
+
+	For the oldstable distribution (squeeze), the problem has been fixed in
+	version 1.4.8-1+squeeze1. See DSA 2711-1.
+
+	The stable distribution (wheezy) doesn't contain haproxy.
+
+	For the unstable distribution (sid), the problem has been fixed in
+	version 1.4.24-1. See DSA 2711-1.
+
+	We recommend that you upgrade your haproxy packages.
