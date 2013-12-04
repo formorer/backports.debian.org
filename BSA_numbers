@@ -82,6 +82,6 @@
 082 haproxy
 083 xml-security-c
 084-darktable
-085-roundcube
-086-strongswan
-087-openssh
+085 roundcube
+086 strongswan
+087 openssh

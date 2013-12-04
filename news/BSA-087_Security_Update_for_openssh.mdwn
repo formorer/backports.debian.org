@@ -1,0 +1,22 @@
+[[!meta date="2013-11-12 22:20:01 UTC"]]
+	Colin Watson uploaded new packages for openssh which fixed the following
+	security problems:
+
+	CVE-2013-4548
+	  A memory corruption vulnerability exists in the post-authentication
+	  sshd process when an AES-GCM cipher (aes128-gcm@openssh.com or
+	  aes256-gcm@openssh.com) is selected during kex exchange.
+
+	  If exploited, this vulnerability might permit code execution with the
+	  privileges of the authenticated user and may therefore allow bypassing
+	  restricted shell/command configurations.
+
+	  https://security-tracker.debian.org/tracker/CVE-2013-4548
+
+	For the wheezy-backports distribution, this problem has been fixed in
+	version 1:6.4p1-1~bpo70+1.
+
+	For the testing (jessie) and unstable (sid) distributions, this problem
+	has been fixed in version 1:6.4p1-1.
+
+	Other distributions are not vulnerable.

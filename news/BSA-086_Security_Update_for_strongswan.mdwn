@@ -1,0 +1,21 @@
+[[!meta date="2013-11-12 22:20:01 UTC"]]
+	Updated strongswan packages for squeeze-backports and wheezy-backports
+	fix the following vulnerabilities:
+
+	- CVE-2013-2944: When using the openssl plugin for ECDSA based
+	  authentication, an empty, zeroed or otherwise invalid signature is
+	  handled as a legitimate one.
+
+	- CVE-2013-6075: DoS vulnerability and potential authorization bypass
+	  triggered by a crafted ID_DER_ASN1_DN ID payload.
+
+	- CVE-2013-6076: DoS vulnerability triggered by crafted IKEv1
+	  fragmentation payloads.
+
+	The squeeze-backports distribution was affected by CVE-2013-2944 and
+	CVE-2013-6075. These problems have been fixed in version
+	4.5.2-1.5+deb7u2~bpo60+1.
+
+	The wheezy-backports distribution was affected by CVE-2013-6075 and
+	CVE-2013-6076. These problems have been fixed in version
+	5.1.0-3~bpo70+1.

@@ -1,0 +1,31 @@
+[[!meta date="2013-11-12 21:33:26 UTC"]]
+	Package        : roundcube
+	Vulnerability  : design error
+	Problem type   : remote
+	Debian-specific: no
+	CVE ID         : CVE-2013-6172
+	Debian Bug     : 727668
+
+	It was discovered that roundcube, a skinnable AJAX based webmail
+	solution for IMAP servers, does not properly sanitize the _session
+	parameter in steps/utils/save_pref.inc during saving preferences. The
+	vulnerability can be exploited to overwrite configuration settings and
+	subsequently allowing random file access, manipulated SQL queries and
+	even code execution.
+
+	roundcube in the oldstable distribution (squeeze) is not affected by
+	this problem.
+
+	For backports for the oldstable distribution (squeeze-backports-sloppy),
+	this problem has been fixed in 0.9.5-1~bpo60+1.
+
+	For the stable distribution (wheezy), this problem has been fixed in
+	version 0.7.2-9+deb7u1.
+
+	For backports for the stable distribution (wheezy-backports),
+	this problem has been fixed in 0.9.5-1~bpo70+1.
+
+	For the unstable distribution (sid), this problem has been fixed in
+	version 0.9.4-1.1.
+
+	We recommend that you upgrade your roundcube packages.
