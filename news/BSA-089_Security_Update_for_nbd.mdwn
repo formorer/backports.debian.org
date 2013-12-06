@@ -1,0 +1,11 @@
+[[!meta date="2013-12-04 15:57:10 UTC"]]
+	Wouter Verhelst uploaded new packages for nbd which fixed the
+	following security problems:
+
+	CVE-2013-6410
+	  Incorrect parsing of the access control lists
+
+	For the squeeze-backports distribution the problem has been fixed in
+	version 1:3.2-4~deb7u4~bpo60+1
+
+	nbd is not present in any other backports repository.
