@@ -16,7 +16,7 @@ you want to get include please open a ticket in the debian [request
 tracker](https://rt.debian.org/Ticket/Create.html?Queue=20)
 - please use the backports queue for the ticket. (See
 [wiki](http://wiki.debian.org/rt.debian.org) for more information about the
-request tracker). Once your key is imported, you can start uploading. 
+request tracker). Once your UID is added, wait an hour for the cronjob to import your upload rights and you can start uploading.
 
 The upload happens in the same way as normal uploads to the archive happens,
 just the distribution have to match one of the backports distributions (squeeze-backports, 
