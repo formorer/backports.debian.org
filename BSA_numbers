@@ -85,6 +85,6 @@
 085 roundcube
 086 strongswan
 087 openssh
-088-python-django
+088 python-django
 089-nbd
-090-xorg-server
+090 xorg-server

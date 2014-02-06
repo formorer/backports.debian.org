@@ -1,0 +1,49 @@
+[[!meta date="2013-12-09 20:55:11 UTC"]]
+	Dominic Hargreaves uploaded new packages for python-django which fixed the
+	following security problems:
+
+	CVE-2013-6044
+
+	Nick Brunn reported a possible cross-site scripting vulnerability in
+	python-django, a high-level Python web development framework.
+
+	The is_safe_url utility function used to validate that a used URL is on
+	the current host to avoid potentially dangerous redirects from
+	maliciously-constructed querystrings, worked as intended for HTTP and
+	HTTPS URLs, but permitted redirects to other schemes, such as
+	javascript:.
+
+	The is_safe_url function has been modified to properly recognize and
+	reject URLs which specify a scheme other than HTTP or HTTPS, to prevent
+	cross-site scripting attacks through redirecting to other schemes.
+
+	CVE-2013-4315
+
+	Rainer Koirikivi discovered a directory traversal vulnerability with
+	'ssi' template tags in python-django, a high-level Python web
+	development framework.
+
+	It was shown that the handling of the 'ALLOWED_INCLUDE_ROOTS' setting,
+	used to represent allowed prefixes for the {% ssi %} template tag, is
+	vulnerable to a directory traversal attack, by specifying a file path
+	which begins as the absolute path of a directory in
+	'ALLOWED_INCLUDE_ROOTS', and then uses relative paths to break free.
+
+	To exploit this vulnerability an attacker must be in a position to alter
+	templates on the site, or the site to be attacked must have one or more
+	templates making use of the 'ssi' tag, and must allow some form of
+	unsanitized user input to be used as an argument to the 'ssi' tag.
+
+	CVE-2013-1443
+
+	It was discovered that python-django, a high-level Python web
+	develompent framework, is prone to a denial of service vulnerability
+	via large passwords.
+
+	A non-authenticated remote attacker could mount a denial of service by
+	submitting arbitrarily large passwords, tying up server resources in
+	the expensive computation of the corresponding hashes to verify the
+	password.
+
+	For the squeeze-backports distribution the problems have been fixed in
+	version 1.4.5-1+deb7u4~bpo60+1.

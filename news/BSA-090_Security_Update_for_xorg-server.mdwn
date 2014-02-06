@@ -1,0 +1,23 @@
+[[!meta date="2013-12-15 11:53:55 UTC"]]
+	intrigeri uploaded new packages for xorg-server which fixed the
+	following security problem:
+
+	CVE-2013-4396
+	  Pedro Ribeiro discovered a use-after-free in the handling of
+	  ImageText requests in the Xorg Xserver, which could result in denial
+	  of service or privilege escalation.
+
+	  https://security-tracker.debian.org/tracker/CVE-2013-4396
+	  http://www.debian.org/security/2013/dsa-2784
+
+	For the squeeze-backports distribution, this problem has been fixed in
+	version 1.10.4-1~bpo60+2.
+
+	For the oldstable distribution (squeeze), this problem has been fixed
+	in version 1.7.7-17.
+
+	For the stable distribution (wheezy), this problem has been fixed in
+	version 1.12.4-6+deb7u1.
+
+	For the testing (jessie) and unstable (sid) distributions, this
+	problem has been fixed in version 1.14.3-4.
