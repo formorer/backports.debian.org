@@ -1,0 +1,27 @@
+[[!meta date="2014-02-09 13:55:55 UTC"]]
+	intrigeri uploaded new packages for nss which fixed the
+	following security problems:
+
+	CVE-2013-1739 (DSA-2790-1)
+	  A flaw was found in the way the Mozilla Network Security Service library (nss)
+	  read uninitialized data when there was a decryption failure. A remote attacker
+	  could use this flaw to cause a denial of service (application crash) for
+	  applications linked with the nss library.
+
+	CVE-2013-5605 (DSA-2800-1)
+	  Andrew Tinits reported a potentially exploitable buffer overflow in the
+	  Mozilla Network Security Service library (nss). With a specially crafted
+	  request a remote attacker could cause a denial of service or possibly execute
+	  arbitrary code.
+
+	For the squeeze-backports distribution the problems have been fixed in
+	version 2:3.14.5-1~bpo60+1.
+
+	For the oldstable distribution (squeeze), the problems have been fixed in
+	version 3.12.8-1+squeeze7.
+
+	For the stable distribution (wheezy), the problems have been fixed in version
+	2:3.14.5-1.
+
+	For the testing (jessie) and unstable (sid) distributions, the problems have
+	been fixed in version 2:3.15.3-1.
