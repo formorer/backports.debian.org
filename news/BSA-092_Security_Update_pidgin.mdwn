@@ -1,0 +1,61 @@
+[[!meta date="2014-02-15 10:31:23 UTC"]]
+	intrigeri uploaded new packages for pidgin which fixed the following security
+	problems:
+
+	CVE-2013-6477
+	  Jaime Breva Ribes discovered that a remote XMPP user can trigger a crash by
+	  sending a message with a timestamp in the distant future.
+
+	CVE-2013-6478
+	  Pidgin could be crashed through overly wide tooltip windows.
+
+	CVE-2013-6479
+	  Jacob Appelbaum discovered that a malicious server or a "man in the middle"
+	  could send a malformed HTTP header resulting in denial of service.
+
+	CVE-2013-6481
+	  Daniel Atallah discovered that Pidgin could be crashed through malformed
+	  Yahoo! P2P messages.
+
+	CVE-2013-6482
+	  Fabian Yamaguchi and Christian Wressnegger discovered that Pidgin could be
+	  crashed through malformed MSN messages.
+
+	CVE-2013-6483
+	  Fabian Yamaguchi and Christian Wressnegger discovered that Pidgin could be
+	  crashed through malformed XMPP messages.
+
+	CVE-2013-6484
+	  It was discovered that incorrect error handling when reading the response from
+	  a STUN server could result in a crash.
+
+	CVE-2013-6485
+	  Matt Jones discovered a buffer overflow in the parsing of malformed
+	  HTTP responses.
+
+	CVE-2013-6487
+	  Yves Younan and Ryan Pentney discovered a buffer overflow when parsing
+	  Gadu-Gadu messages.
+
+	CVE-2013-6489
+	  Yves Younan and Pawel Janic discovered an integer overflow when parsing
+	  MXit emoticons.
+
+	CVE-2013-6490
+	  Yves Younan discovered a buffer overflow when parsing SIMPLE headers.
+
+	CVE-2014-0020
+	  Daniel Atallah discovered that Pidgin could be crashed via malformed
+	  IRC arguments.
+
+	For the squeeze-backports distribution the problems have been fixed in version
+	2.10.9-1~bpo60+1.
+
+	For the oldstable distribution (squeeze), no direct backport is provided.
+	One should use the fixed package from squeeze-backports instead.
+
+	For the stable distribution (wheezy), these problems have been fixed in version
+	2.10.9-1~deb7u1.
+
+	For the unstable distribution (sid), these problems have been fixed in version
+	2.10.9-1.
