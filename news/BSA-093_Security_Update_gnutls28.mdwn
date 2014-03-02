@@ -1,0 +1,15 @@
+[[!meta date="2014-02-22 14:11:49 UTC"]]
+	Andreas Metzler  uploaded new packages for gnutls28 which fixed the
+	following security problems:
+
+	CVE-2014-1959 / DSA 2866-1 / GNUTLS-SA-2014-1
+	  Suman Jana reported that GnuTLS, deviating from the documented
+	  behavior considers a version 1 intermediate certificate as a CA
+	  certificate by default.
+
+	For the testing distribution (jessie) and the unstable distribution
+	(sid), this problem has been fixed in gnutls26/2.12.23-12 and
+	gnutls28/3.2.11-1.
+
+	For the stable distribution this problem has been fixed in
+	gnutls26/2.12.20-8.
