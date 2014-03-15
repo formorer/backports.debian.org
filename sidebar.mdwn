@@ -14,9 +14,13 @@
 
 #Miscellaneous
 
-* [Squeeze uploaders](/changes/squeeze-backports.html)
-* [Squeeze-sloppy uploaders](/changes/squeeze-backports-sloppy.html)
-* [Wheezy uploaders](/changes/wheezy-backports.html)
+* Uploaders
+  * [Squeeze](/changes/squeeze-backports.html)
+  * [Squeeze-sloppy](/changes/squeeze-backports-sloppy.html)
+  * [Wheezy](/changes/wheezy-backports.html)
 * [NEW Queue](http://ftp-master.debian.org/backports-new.html)
-* [[diffstats|squeeze-backports/overview]]
+* Diffstats
+  * [[squeeze|squeeze-backports/overview]]
+  * [[squeeze-sloppy|squeeze-backports-sloppy/overview]]
+  * [[wheezy|wheezy-backports/overview]]
 * [Feedback](mailto:backports-team@debian.org)
