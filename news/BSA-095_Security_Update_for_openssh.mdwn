@@ -1,0 +1,34 @@
+[[!meta date="2014-04-30 10:16:12 UTC"]]
+	Colin Watson uploaded new packages for openssh which fixed the following
+	security problems:
+
+	CVE-2014-2532 (DSA-2894-1)
+	  Jann Horn discovered that OpenSSH incorrectly handled wildcards in
+	  AcceptEnv lines.  A remote attacker could use this issue to trick
+	  OpenSSH into accepting any environment variable that contains the
+	  characters before the wildcard character.
+
+	  https://security-tracker.debian.org/tracker/CVE-2014-2532
+
+	CVE-2014-2653 (DSA-2894-1)
+	  Matthew Vernon reported that if a SSH server offers a HostCertificate
+	  that the ssh client doesn't accept, then the client doesn't check the
+	  DNS for SSHFP records.  As a consequence a malicious server can
+	  disable SSHFP-checking by presenting a certificate.
+
+	  Note that a host verification prompt is still displayed before
+	  connecting.
+
+	  https://security-tracker.debian.org/tracker/CVE-2014-2653
+
+	For the wheezy-backports distribution, these problems have been fixed in
+	version 1:6.6p1-4~bpo70+1.
+
+	For the oldstable distribution (squeeze), these problems have been fixed
+	in version 1:5.5p1-6+squeeze5.
+
+	For the stable distribution (wheezy), these problems have been fixed in
+	version 1:6.0p1-4+deb7u1.
+
+	For the testing (jessie) and unstable (sid) distributions, these
+	problems have been fixed in version 1:6.6p1-1.
