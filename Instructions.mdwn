@@ -18,11 +18,11 @@ your needs, and not use all available backports.
 ##Add backports to your sources.list 
 
 1.  For squeeze add this line 
-    <pre>deb http://YOURMIRROR.debian.org/debian-backports squeeze-backports(-sloppy) main</pre>
+    <pre>deb http://http.debian.net/debian-backports squeeze-backports(-sloppy) main</pre>
     to your **sources.list** (or add a new file with the ".list" extension to /etc/apt/sources.list.d/).
 
     For wheezy add this line
-    <pre>deb http://YOURMIRROR.debian.org/debian wheezy-backports main</pre> to your **sources.list** 
+    <pre>deb http://http.debian.net/debian wheezy-backports main</pre> to your **sources.list** 
     (or add a new file with the ".list" extension to /etc/apt/sources.list.d/)
 2. Run **apt-get update**
 
