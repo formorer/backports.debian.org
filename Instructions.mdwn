@@ -21,13 +21,13 @@ your needs, and not use all available backports.
     <pre>deb http://http.debian.net/debian-backports squeeze-backports(-sloppy) main</pre>
     to your **sources.list** (or add a new file with the ".list" extension to /etc/apt/sources.list.d/).
     You can also find a list of other mirrors at
-    http://backports.debian.org/Mirrors/
+    <http://backports.debian.org/Mirrors/>
 
     For wheezy add this line
     <pre>deb http://http.debian.net/debian wheezy-backports main</pre> to your **sources.list** 
     (or add a new file with the ".list" extension to /etc/apt/sources.list.d/)
     You can also find a list of other mirrors at
-    https://www.debian.org/mirror/list
+    <https://www.debian.org/mirror/list>
 2. Run **apt-get update**
 
 ##Install a package from backports
