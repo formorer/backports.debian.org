@@ -1,0 +1,17 @@
+[[!meta date="2014-06-24 16:13:20 UTC"]]
+	Rene Engelhard uploaded new packages for libreoffice which fixed the following
+	security problems:
+
+	CVE-2014-0247
+	  It was discovered that LibreOffice unconditionally executed certain VBA
+	  macros, contrary to user expectations.
+
+	  https://security-tracker.debian.org/tracker/CVE-2014-0247
+
+	The stable distribution (wheezy) is not affected by this issue.
+
+	For the testing (jessie) and unstable (sid) distributions, these
+	problems have been fixed in version 1:4.2.5-1.
+
+	For the wheezy-backports distribution, these problems have been fixed in
+	version 1:4.2.5-1~bpo70+1.

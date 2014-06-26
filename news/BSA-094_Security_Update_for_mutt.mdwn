@@ -1,0 +1,22 @@
+[[!meta date="2014-03-15 13:00:10 UTC"]]
+	Evgeni Golov uploaded new packages for mutt which fixed the
+	following security problems:
+
+	CVE-2014-0467 / DSA-2874-1
+	  Beatrice Torracca and Evgeni Golov discovered a buffer overflow in the
+	  mutt mailreader. Malformed RFC2047 header lines could result in denial
+	  of service or potentially the execution of arbitrary code.
+
+	For the squeeze-backports distribution the problems have been fixed in
+	version 1.5.21-6.2+deb7u2~bpo60+1.
+
+	For the oldstable distribution (squeeze), this problem has been fixed in
+	version 1.5.20-9+squeeze3.
+
+	For the stable distribution (wheezy), this problem has been fixed in
+	version 1.5.21-6.2+deb7u2.
+
+	For the unstable distribution (sid), this problem has been fixed in
+	version 1.5.22-2.
+
+	We recommend that you upgrade your mutt packages.
