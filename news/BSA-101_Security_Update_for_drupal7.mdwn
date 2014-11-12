@@ -1,0 +1,21 @@
+[[!meta date="2014-10-17 16:52:02 UTC"]]
+	Gunnar Wolf uploaded new packages for Drupal7 which fixed the
+	following security problems:
+
+	CVE 2014-3704 / SA-CORE-2014-005:
+	   Highly critical: Pre Auth SQL injection
+
+	   The expandArguments function in the database abstraction API in
+	   Drupal core 7.x before 7.32 does not properly construct prepared
+	   statements, which allows remote attackers to conduct SQL injection
+	   attacks via an array containing crafted keys.
+
+	   https://www.drupal.org/SA-CORE-2014-005
+	   https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3704
+	   https://www.sektioneins.de/en/advisories/advisory-012014-drupal-pre-auth-sql-injection-vulnerability.html
+
+	For the squeeze-backports distribution the problems have been fixed in
+	version 7.14-2+deb7u7~bpo60+1.
+
+	For the wheezy-backports distribution the problems have been fixed in
+	version 7.32-1~bpo70+1.
