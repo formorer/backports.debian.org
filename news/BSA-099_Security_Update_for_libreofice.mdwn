@@ -1,0 +1,21 @@
+[[!meta date="2014-11-07 17:00:06 UTC"]]
+	Rene Engelhard uploaded new packages for libreoffice which fixed the
+	following security problems:
+
+	CVE-2014-3693:
+	   Use-After-Free in socket manager of Impress Remote
+
+	   It was discovered that LibreOffice 4.0.0 and later does not manage the port
+	   1599 for the LibreOffice Impress correctly. An external attackers with
+	   access to that port could cause the deleted port manager to continue to
+	   process attacker supplied data.
+
+	Note that this update also disables the remote contol per default as it
+	listens on port 1599 "to the world" per default. If you want/need it you
+	need to enable it manally:
+	   1. Open LibreOffice, go to "Tools -> Options..."
+	   2. Select "LibreOffice Impress -> General"
+	   3. Check "Presentation -> Enable remote control"
+
+	For the wheezy-backports distribution the problems have been fixed in
+	version 1:4.3.3~rc2-1~bpo70+1.
