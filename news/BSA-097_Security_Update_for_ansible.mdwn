@@ -1,0 +1,23 @@
+[[!meta date="2014-07-23 19:55:09 UTC"]]
+	Harlan Lieberman-Berg uploaded new packages for ansible which fixed
+	the following security problems:
+
+	CVE-2014-4966
+	  A bug was discovered by Brian Harring that could allow for the
+	  escalation of a local permission access level into an arbitrary code
+	  execution, by interpolation of maliciously crafted file names.
+
+	CVE-2014-4967
+	  A bug was discovered by Brian Harring concerning the unsafe parsing
+	  of action arguments when an attacker can control any variable data,
+	  including fact data, with_fileglob data, and others.  Depending on
+	  what module the attacker targets, the impact ranges from information
+	  disclosure to arbitrary shell code execution.
+
+	For the wheezy-backports distribution, these problems have been fixed
+	in version 1.6.8+dfsg-1~bpo70+1.
+
+	The stable distribution (wheezy) was not affected by this issue.
+
+	For the testing (jessie) and unstable (sid) distributions, these
+	problems have been fixed in version 1.6.8+dfsg-1.

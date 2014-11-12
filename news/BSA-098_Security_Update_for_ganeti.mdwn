@@ -1,0 +1,18 @@
+[[!meta date="2014-08-13 12:24:34 UTC"]]
+	Guido Trotter <ultrotter@debian.org> uploaded new packages for ganeti
+	(2.11.5-1~bpo70+1) which fixes the following security problems:
+
+	oCERT #2014-006 (CVE pending)
+	  Ganeti insecure archive permission
+	  http://www.ocert.org/advisories/ocert-2014-006.html
+	  (the full text of the advisory is also included in NEWS.Debian)
+
+	For the testing (jessie) and unstable (sid) distributions, these
+	problems have been fixed in version 2.11.5-1.
+
+	For the wheezy-backports distribution, these problems have been fixed in
+	version 2.11.5-1~bpo70+1.
+
+	The stable distribution (wheezy) is not affected by this issue.
+	The old stable distribution (squeeze) is not affected by this issue.
+	The old stable backports (squeeze-backports) is not affected by this issue.
