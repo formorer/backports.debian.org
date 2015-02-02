@@ -70,8 +70,8 @@ If you feel you would need to diverge from these rules, either discuss it on the
 
 With the release of a new stable version uploading packages with versions greater than in new stable or
 new stable-security are not allowed. If you want newer package versions in old-stable-backports we created a 
-new suite for that: old-stable-backports-sloppy. So if you want to upload a package from wheezy to lenny-backports 
-use lenny-backports-sloppy a distribution. 
+new suite for that: old-stable-backports-sloppy. So if you want to upload a package from jessie to squeeze-backports 
+use squeeze-backports-sloppy a distribution. 
 
 ###Additionally
 
@@ -103,30 +103,11 @@ Your mail should follow this template:
     CVE-.... 
       ....
 
-    For the squeeze-backports distribution the problems have been fixed in
+    For the wheezy-backports distribution the problems have been fixed in
     version <packageversion>.
 
     <other distributions if any> 
   
-<!--
-  ---- This is only necessary for old-stable ---- 
-    Upgrade instructions
-    --------------------
-  
-    If you don't use pinning (see [1]) you have to update the package
-    manually via "apt-get -t lenny-backports install <packagelist>" with
-    the packagelist of your installed packages affected by this update.
-    [1] <http://backports.debian.org/Instructions>
-  
-    We recommend to pin (in /etc/apt/preferences) the backports repository to
-    200 so that new versions of installed  backports will be installed
-    automatically. 
-  
-      Package: *
-      Pin: release a=lenny-backports
-      Pin-Priority: 200
-
--->
 The Mailinglist is moderated so please be a little bit patient if your post does not appear immediately on the list. 
 
 
@@ -152,7 +133,7 @@ to update the backports.
 
 ###Inform the Backporter 
 
-If there is already a backport of your package of choice but it's outdated and you want to update it please inform the person who backported the last accepted version about your intentions. You can get the information from <http://backports.debian.org/changes/squeeze-backports.html>
+If there is already a backport of your package of choice but it's outdated and you want to update it please inform the person who backported the last accepted version about your intentions. You can get the information from <http://backports.debian.org/changes/wheezy-backports.html>
 
 ###Uploaders
 
