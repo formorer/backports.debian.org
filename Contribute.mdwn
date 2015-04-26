@@ -117,7 +117,7 @@ Your mail should follow this template:
     CVE-.... 
       ....
 
-    For the wheezy-backports distribution the problems have been fixed in
+    For the jessie-backports distribution the problems have been fixed in
     version <packageversion>.
 
     <other distributions if any> 
@@ -147,7 +147,7 @@ to update the backports.
 
 ###Inform the Backporter 
 
-If there is already a backport of your package of choice but it's outdated and you want to update it please inform the person who backported the last accepted version about your intentions. You can get the information from <http://backports.debian.org/changes/wheezy-backports.html>
+If there is already a backport of your package of choice but it's outdated and you want to update it please inform the person who backported the last accepted version about your intentions. You can get the information from <http://backports.debian.org/changes/jessie-backports.html>
 
 ###Uploaders
 
