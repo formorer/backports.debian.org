@@ -25,6 +25,6 @@
   * [[squeeze|squeeze-backports/overview]]
   * [[squeeze-sloppy|squeeze-backports-sloppy/overview]]
   * [[wheezy|wheezy-backports/overview]]
-  * [[wheezy-slopy|wheezy-backports-sloppy/overview]]
+  * [[wheezy-sloppy|wheezy-backports-sloppy/overview]]
   * [[jessie|jessie-backports/overview]]
 * [Feedback](mailto:backports-team@debian.org)
