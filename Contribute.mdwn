@@ -65,7 +65,7 @@ updates. If your package had a security update you can upload a new backport
 even if its not yet in testing. There are also some other exception for
 packages like the kernel, xorg or oo.org.
 * Do not do any changes to the package beside of backporting stuff.
-* It is recommended to nclude all changelog entries since the last version on
+* It is recommended to include all changelog entries since the last version on
   debian-backports or since stable if it's the first version. You should do
   this by passing "-v<version>" to dpkg-buildpackage. Eg: "debuild -v0.7.5-2",
   where "0.7.5-2" is the version in stable. If the package wasn't in stable or
@@ -84,7 +84,7 @@ If you feel you would need to diverge from these rules, either discuss it on the
 With the release of a new stable version uploading packages with versions greater than in new stable or
 new stable-security are not allowed. If you want newer package versions in old-stable-backports we created a 
 new suite for that: old-stable-backports-sloppy. So if you want to upload a package from jessie to squeeze-backports 
-use squeeze-backports-sloppy a distribution and for packages from stretch for
+use squeeze-backports-sloppy as distribution and for packages from stretch for
 wheezy, use wheezy-backports-sloppy as target distribution.
 
 ###Additionally

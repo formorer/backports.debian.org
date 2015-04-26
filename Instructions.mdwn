@@ -49,13 +49,13 @@ of course you can use aptitude as well:
 
 ##sloppy distributions
 
-Tu guarantee a clean upload path from a previously stable distribution to the
-next stable it is not allowed to upload packages from the current stable to
+To guarantee a clean upgrade path from a previously stable distribution to the
+next stable it is not allowed to upload packages from the current testing to
 that backport distribution. To allow some newer packages for those systems we
 create so called sloppy distributions. For oldstable (wheezy) packages from
 the current testing (stretch) are allowed to be uploaded to
 wheezy-backports-sloppy. For LTS (squeeze) we only allow packages from the
-current stable to squeeze-backports-sloppy.
+current stable (jessie) to squeeze-backports-sloppy.
 
 You can use it exactly as the current backports distribution, just add another line to your **sources.list** and install 
 new packages via
