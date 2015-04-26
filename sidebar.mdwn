@@ -18,6 +18,8 @@
   * [Squeeze](/changes/squeeze-backports.html)
   * [Squeeze-sloppy](/changes/squeeze-backports-sloppy.html)
   * [Wheezy](/changes/wheezy-backports.html)
+  * [Wheezy-sloppy](/changes/wheezy-backports-sloppy.html)
+  * [Jessie](/changes/jessie-backports.html)
 * [NEW Queue](http://ftp-master.debian.org/backports-new.html)
 * Diffstats
   * [[squeeze|squeeze-backports/overview]]
