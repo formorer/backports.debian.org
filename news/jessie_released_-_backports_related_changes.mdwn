@@ -1,0 +1,79 @@
+[[!meta date="2015-04-26 06:34:33 UTC"]]
+	      Dear users of the backports service!
+
+	 With the release of Jessie (coming up) we are pleased to open the doors
+	for jessie-backports and wheezy-backports-sloppy (mostly all
+	architectures are already buildable there, too).  Whee!
+
+	 But, PLEASE DO READ ON, there are some changes in the process that we
+	would like to do for the new upload pockets.
+
+
+	== What to upload where ==
+
+	 As a reminder, uploads to a release-backports pocket are to be taken
+	from release + 1, uploads to a release-backports-sloppy pocket are to be
+	taken from release + 2.  Which means:
+
+	 Source Distribution | Backports Distribution | Sloppy Distribution
+	---------------------|------------------------|--------------------------
+	 stretch             | jessie-backports       | wheezy-backports-sloppy
+	 jessie              | wheezy-backports       | squeeze-backports-sloppy
+
+
+	== We drop -v switch hard requirement ==
+
+	 We required uploads to contain the changelog entries since the former
+	version in stable in the changes file.  This was quite convenient for
+	people reading the changes through the changes mailinglist but
+	especially also for the backports team when processing packages.
+
+	 Given that the changelogs of former backports and the packages
+	backported are available through the packages.debian.org website
+	(amongst other sources) and that it was annoying to both backporters and
+	also us as backports team we are dropping it as hard requirement.  It
+	would still be pretty awesome for the above mentioned reasons if you
+	could keep it as part of your workflow, especially for uploads that end
+	in the policy queue, but we won't reject packages based solely on that
+	nymore.
+
+
+	== Versioning ==
+
+	 Previous we used ~bpo70+1 as suffix for the versions of uploads.  We
+	were asked whether we might want to align that with the other suffixes
+	used and drop the zero from within there, and yes, we will drop it.
+	This means that uploads to jessie-backports should use ~bpo8+1 as
+	suffix, and also wheezy-backports-sloppy uses ~bpo7+1 as suffix.
+
+	 For wheezy-backports please still use ~bpo70+1 version suffixes
+	because of sorting reasoning, especially if there are also
+	squeeze-backports-sloppy packages around.  Which brings us to ...
+
+
+	== squeeze-backports* ==
+
+	 As you are probably aware, squeeze is still a supported release through
+	LTS.  The same goes for the squeeze-backports* suites, you can consider
+	them to be around for the same timeframe that LTS is going to be around.
+
+
+	== Statistics ==
+
+	 For packages backported from jessie, so far we have 995 different
+	source packages in wheezy-backports, and 27 different source packages in
+	squeeze-backports-sloppy.  Those 995 source packages took 1729 uploads
+	to become reality.
+
+
+	== Thanks ==
+
+	 Thanks have to go out to all people making backports possible, and that
+	includes up front the backporters themself who do upload the packages,
+	track and update them on a regular basis, but also the buildd team
+	making the autobuilding possible and the ftp masters for creating the
+	suites in the first place.
+
+	 Enjoy, and continue being awesome!
+	Rhonda, on behalf of the Backports Team
+
