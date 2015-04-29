@@ -1,0 +1,22 @@
+[[!meta date="2015-03-21 13:17:04 UTC"]]
+	Dominic Hargreaves uploaded new packages for request-tracker4 which fixed the
+	following security problems:
+
+	CVE-2014-9472
+	  Remote DoS via email gateway
+
+	CVE-2015-1165
+	  Information discloure revealing RSS feed URLs
+
+	CVE-2015-1464
+	  Privilege escalation via RSS feed URLs
+
+	For the wheezy-backports distribution the problems have been fixed in
+	version 4.0.19-1~bpo70+2.
+
+	The problems have been fixed in other distributions as follows:
+
+	* sid/jessie: 4.2.8-3
+	* wheezy: 4.0.7-5+deb7u3.
+	* squeeze-backports: 4.0.7-5+deb7u3~bpo60+1
+	* squeeze-lts: 3.8.8-7+squeeze9 (of request-tracker3.8)
