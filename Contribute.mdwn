@@ -48,7 +48,7 @@ unstable or stable as target distribution.
 | Source Distribution | Backports Distribution                      |
 |---------------------|---------------------------------------------|
 | wheezy              | squeeze-backports-sloppy                    |
-| jessie              | wheezy-backports or jessie-backports-sloppy |
+| jessie              | wheezy-backports or squeeze-backports-sloppy|
 | stretch             | jessie-backports or wheezy-backports-sloppy |
 
 
