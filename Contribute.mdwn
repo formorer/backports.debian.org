@@ -31,9 +31,9 @@ If you are not a Debian Developer, please upload your backport somewhere
 (binaries and sources, e.g. to mentors.debian.net), post a link to its .dsc
 file on <debian-backports@lists.debian.org> and ask for review and upload.
 
-### Some important note
+### An Important Note
 
-Please note, that you are responsible for this backport from the time on when
+Please note, that **you are responsible for this backport** from the time on when
 it was accepted on debian-backports. This means, you have to keep track of the
 changes in unstable, update your backport when a new version enters testing and
 provide security updates when needed. If you are not willing or capable of
@@ -45,36 +45,39 @@ create and maintain the backport.
 The following distributions are supported for backports. Please don't use
 unstable or stable as target distribution.
 
-| Source Distribution | Backports Distribution                      |
-|---------------------|---------------------------------------------|
-| wheezy              | squeeze-backports-sloppy                    |
-| jessie              | wheezy-backports or jessie-backports-sloppy |
-| stretch             | jessie-backports or wheezy-backports-sloppy |
+| Source Distribution | Backports Distribution (and version modifier) |
+|---------------------|----------------------------------------------------------------|
+| wheezy              | squeeze-backports-sloppy                                       |
+| jessie              | wheezy-backports (**~bpo70+**) or jessie-backports-sloppy (**~bpo8+**) |
+| stretch             | jessie-backports (**~bpo8+**) or wheezy-backports-sloppy (**~bpo7+**)  |
 
 
 ###Basic Rules 
 
-* [Subscribe to the backports mailinglist](http://lists.debian.org/debian-backports/). Every announcement and bugreport should come over this mailinglist, so this is a must.
-* Make sure that you have a proper build environment which only contains squeeze and no unneeded backports. Maybe you want to consider pbuilder or cowbuilder for building packages.
-* Append "~bpo${debian_release}+${build_int}" to the version number, e.g. "1.2.3-4" now becomes "1.2.3-4~bpo8+1", or for native packages, "1.2.3" becomes "1.2.3~bpo8+1". For packages to wheezy-backports stick to 70 for the debian_release, which would become 1.2.3~bpo70+1 in our example. wheezy-backports-sloppy also uses 7 instead of 70.
+* [Subscribe to the backports announce mailinglist](http://lists.debian.org/debian-backports-announce/). Important announcements and security bugreports appear there, so this is a must.
+* [Subscribe to the backports mailinglist](http://lists.debian.org/debian-backports/). User bugreports may come over this mailinglist, and also useful developer discussions.
+* Make sure that you have a proper build environment which only contains squeeze and no unneeded backports. Maybe you want to consider pbuilder or cowbuilder for building packages. See Miscelaneous section below for more examples.
+* Make sure you target the correct distribution in your changelog (**mind the -sloppy renaming in new releases**) and obey the version number rules. See previous chapter and the following examples.
+* Append "~bpo${debian_release}+${build_int}" to the version number, e.g. "1.2.3-4" now becomes "1.2.3-4~bpo8+1", or for native packages, "1.2.3" becomes "1.2.3~bpo8+1". **Exception:** For packages to wheezy-backports (and previous) add an additional zero to {debian_release}, which would make it 1.2.3~bpo70+1 in our example. However, wheezy-backports-sloppy uses 7 instead of 70.
 * Please only upload package with a noteable userbase. User request for the package may be an indicator.
 * Don't backport minor version changes without any user visible changes or bugfixes
 * To guarantee an upgrade path from stable+backports to the next stable, the
-package should be in testing.. Of course there are some exceptions: Security
+package should be in testing... of course there are exceptions: Security
 updates. If your package had a security update you can upload a new backport
-even if its not yet in testing. There are also some other exception for
-packages like the kernel, xorg or oo.org.
+even if its not yet in testing. There are also some other exceptions for
+packages like the kernel, xorg or OpenOffice/LibreOffice.
 * Do not do any changes to the package beside of backporting stuff.
-* It is recommended to nclude all changelog entries since the last version on
-  debian-backports or since stable if it's the first version. You should do
-  this by passing "-v<version>" to dpkg-buildpackage. Eg: "debuild -v0.7.5-2",
-  where "0.7.5-2" is the version in stable. If the package wasn't in stable or
+* Regarding the *.changes* file, it is recommended to include all changelog entries since the last version on
+  debian-backports or since stable if it's the first version. It helps others to follow the changes introduced with the
+  backport (by reading the changes mailinglist). If the package wasn't in stable or
   backports before you don't have include the changelog entrys (but you are
-  free to do so). It helps others to follow the changes introduced with the
-  backport (by reading the changes mailinglist).
+  free to do so).
+  To get this, you should pass "-v<version>" to dpkg-buildpackage. Eg: "debuild -v0.7.5-2",
+  where "0.7.5-2" is the most recent version in stable (or related backports).  Also see
+  section Miscelaneous below for more command line examples.
 * Before uploading please think about how useful the package is for stable
-users and if you want to support the package until support for the distribution
-you uploaded ends.
+users and whether you personally want to support the package until the distribution that you
+are targeting reaches its end of life (also mind the LTS).
 
 If you feel you would need to diverge from these rules, either discuss it on the [mailinglist](http://lists.debian.org/debian-backports/) or bring it up with the [Backports Team](mailto:backports-team@debian.org) for an exception.
 
@@ -156,3 +159,10 @@ track your backports on the package overview at
 <http://qa.debian.org/developer.php>. Alternatively you can use the
 [subscribe feature](http://qa.debian.org/developer.php#subscribe) of the DDPO
 to have them listed.
+
+##Miscelaneous
+###Pbuilder Usage
+Building for wheezy-backports-sloppy with "nice" changes file
+<pre>$ sudo pbuilder --build --basetgz /var/cache/pbuilder/base-amd64-wheezy.tgz --debbuildopts "--changes-option=-v0.8.0-1~bpo70+2"  ../build-area/package_0.8.3-1~bpo7+1.dsc</pre>
+Where the build environment was created with <pre>pbuilder --create --distribution wheezy --basetgz /var/cache/pbuilder/base-amd64-wheezy.tgz</pre>
+Please also remember to *--update* your base tarball after minor stable or oldstable releases.
