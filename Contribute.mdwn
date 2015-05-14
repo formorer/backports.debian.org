@@ -56,7 +56,8 @@ unstable or stable as target distribution.
 
 * [Subscribe to the backports announce mailinglist](http://lists.debian.org/debian-backports-announce/). Important announcements and security bugreports appear there, so this is a must.
 * [Subscribe to the backports mailinglist](http://lists.debian.org/debian-backports/). User bugreports may come over this mailinglist, and also useful developer discussions.
-* Make sure that you have a proper build environment which only contains squeeze and no unneeded backports. Maybe you want to consider pbuilder or cowbuilder for building packages.
+* Make sure that you have a proper build environment which only contains squeeze and no unneeded backports. Maybe you want to consider pbuilder or cowbuilder for building packages. See Miscelaneous section below for more examples.
+* Make sure you target the correct distribution in your changelog (**mind the -sloppy renaming in new releases**) and obey the version number rules. See previous chapter and the following examples.
 * Append "~bpo${debian_release}+${build_int}" to the version number, e.g. "1.2.3-4" now becomes "1.2.3-4~bpo8+1", or for native packages, "1.2.3" becomes "1.2.3~bpo8+1". **Exception:** For packages to wheezy-backports (and previous) add an additional zero to {debian_release}, which would make it 1.2.3~bpo70+1 in our example. However, wheezy-backports-sloppy uses 7 instead of 70.
 * Please only upload package with a noteable userbase. User request for the package may be an indicator.
 * Don't backport minor version changes without any user visible changes or bugfixes
