@@ -1,0 +1,14 @@
+[[!meta date="2015-05-26 07:41:43 UTC"]]
+	Thomas Goirand uploaded new packages for horizon which fixed the
+	following security problem:
+
+	CVE-2015-3988:
+	  Sunil Yadav from IBM Security Services reported a persistent XSS in
+	  Horizon. An authenticated user may conduct a persistent XSS attack by
+	  setting a malicious metadata to a Glance image, a Nova flavor or a
+	  Host Aggregate and tricking an administrator to load the update
+	  metadata page. Once executed in a legitimate context this attack may
+	  result in a privilege escalation.
+
+	For the jessie-backports distribution the problems have been fixed in
+	2015.1.0-2~bpo8+1.
