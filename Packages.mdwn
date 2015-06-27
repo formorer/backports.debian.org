@@ -1,6 +1,15 @@
 **List of packages in debian-backports**
 
-If you are interested in a browseable directory included in debian-backports, you can use these overviews: <a href="http://packages.debian.org/wheezy-backports/">wheezy-backports</a>, <a href="http://packages.debian.org/squeeze-backports/">squeeze-backports</a>, and <a href="http://packages.debian.org/squeeze-backports-sloppy/">squeeze-backports-sloppy</a>.  If you rather want to search for an individual package, please use the forms below.
+If you are interested in a browseable directory included in debian-backports, you can use these overviews: 
+<ul>
+<li><a href="http://packages.debian.org/jessie-backports/">jessie-backports</a></li>
+<li><a href="http://packages.debian.org/wheezy-backports/">wheezy-backports</a></li>
+<li><a href="http://packages.debian.org/wheezy-backports-sloppy/">wheezy-backports-sloppy</a></li>
+<li><a href="http://packages.debian.org/squeeze-backports/">squeeze-backports</a></li>
+<li><a href="http://packages.debian.org/squeeze-backports-sloppy/">squeeze-backports-sloppy</a></li>
+<p />
+If you rather want to search for an individual package, please use the forms below.
+
 
 **Search for packages in debian-backports:**
 
@@ -23,6 +32,8 @@ Section:
 Distribution:
 <select name="suite">
 
+<option value="jessie-backports" selected="selected">jessie-backports</option>
+<option value="wheezy-backports-sloppy" selected="selected">wheezy-backports-sloppy</option>
 <option value="wheezy-backports" selected="selected">wheezy-backports</option>
 <option value="squeeze-backports">squeeze-backports</option>
 <option value="squeeze-backports-sloppy">squeeze-backports-sloppy</option>
