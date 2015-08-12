@@ -20,7 +20,7 @@ request tracker). Once your UID is added, wait an hour for the cronjob to import
 
 The upload happens in the same way as normal uploads to the archive happens,
 just the distribution have to match one of the backports distributions (squeeze-backports, 
-squeeze-backports-sloppy, wheezy-backports)
+squeeze-backports-sloppy, wheezy-backports, jessie-backports)
 
 **The special host in dupload/dput that was needed in the past is now obsolete and doesn't work
 anymore.**
