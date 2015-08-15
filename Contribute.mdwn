@@ -45,11 +45,11 @@ create and maintain the backport.
 The following distributions are supported for backports. Please don't use
 unstable or stable as target distribution.
 
-| Source Distribution | Backports Distribution                      |
-|---------------------|---------------------------------------------|
-| wheezy              | squeeze-backports-sloppy                    |
-| jessie              | wheezy-backports or squeeze-backports-sloppy|
-| stretch             | jessie-backports or wheezy-backports-sloppy |
+| Source Distribution | Backports Distribution                      | Version suffix       |
+|---------------------|---------------------------------------------|----------------------|
+| wheezy              | squeeze-backports-sloppy                    | ~bpo60+1             |
+| jessie              | wheezy-backports or squeeze-backports-sloppy| ~bpo70+1 or ~bpo60+1 |
+| stretch             | jessie-backports or wheezy-backports-sloppy | ~bpo8+1 or ~bpo7+1   |
 
 
 ###Basic Rules 
