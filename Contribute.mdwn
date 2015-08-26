@@ -97,6 +97,9 @@ packages like the kernel, xorg or libreoffice.
 * Before uploading please think about how useful the package is for stable
 users and if you want to support the package until support for the distribution
 you uploaded ends.
+* Backports of an updated version of a package that was backported before
+  *may* have a changelog that merges entries of backports of previous versions,
+  but this is **not required**.
 
 If you feel you would need to diverge from these rules, either discuss it on the [mailinglist](http://lists.debian.org/debian-backports/) or bring it up with the [Backports Team](mailto:backports-team@debian.org) for an exception.
 
