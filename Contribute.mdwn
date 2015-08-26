@@ -25,6 +25,28 @@ squeeze-backports-sloppy, wheezy-backports)
 **The special host in dupload/dput that was needed in the past is now obsolete and doesn't work
 anymore.**
 
+###Debian Maintainers
+
+Debian Maintainers (DM) can also get their uid into the backports ACL.
+Please follow the instructions for Debian Developers.
+
+Please note that:
+
+* Any upload of a package that has to pass through the backports NEW
+  queue (e.g. package not already in that specific backports suite,
+  package adds a new binary package, etc.) needs to be sponsored by a
+  Debian Developer and cannot be done by a Debian Maintainer themselves.
+  (Same as uploading to unstable.) Otherwise, DMs may upload directly.
+* The Debian Maintainer needs to have upload rights for the specific
+  package they want to upload to backports (the same right they need for
+  uploading that package to unstable), otherwise the upload will not
+  succeed. Therefore, if you are a DM that isn't also maintaining the
+  package in unstable, please talk to the regular maintainer first before
+  requesting upload rights for that package. (It is considered good
+  practice to inform the maintainer regardless, see below.) See the
+  [DebianMaintainer page in the Debian wiki](https://wiki.debian.org/DebianMaintainer#Granting_Permissions)
+  for instructions for DDs on how to give upload rights to DMs.
+
 ###Non Debian Developer
 
 If you are not a Debian Developer, please upload your backport somewhere
