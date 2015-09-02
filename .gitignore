@@ -1,2 +1,6 @@
 /.ikiwiki
 /recentchanges
+/testdir
+*~
+*.bak
+*.sw?
