@@ -1,4 +1,4 @@
-We have the following mailinglists for debian-backports:
+We have the following mailing lists for debian-backports:
 
 * [Debian Backports](http://lists.debian.org/debian-backports/) - For bugreporting and discussions about debian-backports 
 * [Debian Backports Announce](http://lists.debian.org/debian-backports-announce/) - (Security) Announces for backports.debian.org
