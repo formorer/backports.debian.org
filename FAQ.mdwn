@@ -3,7 +3,7 @@
 **Q: Where shall I report bugs I found in packages from backports to?**
 
 A: Please report them to the
-[debian-backports mailinglist](http://lists.debian.org/debian-backports/). The
+[debian-backports mailing list](http://lists.debian.org/debian-backports/). The
 Debian bugtracking system doesn't know anything about backports versions, and
 sometimes the backporter isn't in the Debian packaging team so they might miss
 the report.
