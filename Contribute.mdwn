@@ -97,8 +97,11 @@ bugs fixed, library transitions.
   free to do so). It helps others to follow the changes introduced with the
   backport (by reading the changes mailing list).
 * Before uploading please think about how useful the package is for stable
-users and if you want to support the package until support for the distribution
-you uploaded ends.
+  users and if you want to support the package until support for the
+  distribution you uploaded ends. You should consider adding yourself to the
+  Uploaders field of the debian/control file or subscribing to the package
+  though PTS. What is important is that you track the package for the lifetime
+  of the release cycle.
 * Backports of an updated version of a package that was backported before
   *may* have a changelog that merges entries of backports of previous versions,
   but this is **not required**.
