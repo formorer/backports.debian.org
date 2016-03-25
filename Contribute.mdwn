@@ -102,6 +102,9 @@ you uploaded ends.
 * Backports of an updated version of a package that was backported before
   *may* have a changelog that merges entries of backports of previous versions,
   but this is **not required**.
+* If the packages lists a VCS in the debian/control file, please ask the maintainer
+of the package to add your changes there, or ask for permission to do it yourself.
+
 
 If you feel you would need to diverge from these rules, either discuss it on the [mailing list](http://lists.debian.org/debian-backports/) or bring it up with the [Backports Team](mailto:backports-team@debian.org) for an exception.
 
